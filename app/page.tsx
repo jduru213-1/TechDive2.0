@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main>
       <h1> Hello World </h1> 
-      <h2> My name is Courage </h2>
       <Link href = "/users">Users</Link>
       <ProductCard />
     </main>
