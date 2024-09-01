@@ -1,23 +1,19 @@
 /*  */
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    margin: 0; /* Removes default margin for the body */
-    background-color: rgba(0, 0, 0, 0); /* Black color with 10% opacity */
-    padding: 0; /* Removes default padding for the body */
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  width: 100%;
+  height: 100vh;
+}
   
   /* Controls just for Heading 1 which is within the contents function (including font-size,color, padding etc) */
   .contents h1{
     color: rgb(255, 255, 255);
-    font-weight: 500;
-    padding: 10rem 0;
+    font-weight: 700;
+    padding: 10rem ;
     font-size: 50px;
     text-align: center;
     line-height: 1.2;
@@ -27,9 +23,10 @@
 /* Controls just for paragrpah which is within the contents function */
 .contents p{
   text-align: center;
-  color: white;
+  color: rgb(238, 236, 236);
   position: relative;
   top: -150px;
+  font-weight: 500;
 
 }
 
@@ -43,7 +40,7 @@
 /* In-depth adjuestment and postioning for buttons  */
   .button button {
     position: relative;
-    top: -100px;
+    top: -95px;
     padding: 1rem 2rem;
     margin: -15rem 1rem;
     background-color: transparent;
@@ -53,20 +50,27 @@
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     transition: 0.25s background-color;
-
   }
+  
+
+.motive p{
+  position: relative;
+  top: 90px;
+
+}
 
 /* Some features for the buttons */
   .button button:hover {
     background-color: white;
     color: black;
-    transition: 0.25s background-color;
+    transition: transform 0.5s , background-color 0.3ms, color 0.3s;
     cursor: pointer;
+    transform: translateY(-10px);
   }
 
 /* Function for the backgrond image (very differnet compared to just uploading pictures) */
   .video {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -1;
     width: 100%;
@@ -109,7 +113,57 @@
 
 /*  Features for the "TECH DIVE*/
 .logo{
-  font-size: 32px;
+  font-size: 25px;
   color: white;
   font-weight: 700;
 }
+
+/* Adjustments and configurations for our imaages  */
+.Justin{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .Justin img{
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  margin-right: 200px;
+  top: -450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .Justin img:hover {
+  transform: scale(1.1); /* Slightly increases the size */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+ .courage{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .courage img {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  top: -1150px;
+  margin-left: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courage img:hover {
+  transform: scale(1.1); /* Slightly increases the size */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
