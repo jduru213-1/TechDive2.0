@@ -85,66 +85,77 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Resources section container */}
-        <div id="resources-section" className={styles.resources}>
-          <h1>Resources</h1>
-          <p>sjssjsjsjssjsjsjsxnkxnk</p>
-          <div className="flex justify-around items-center">
-            <div className="mx-4">
-              <div className="card bg-base-100 w-96 shadow-xl">
-                <figure className="px-10 pt-10">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Programming"
-                    className="rounded-xl"
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h2 className="card-title">Programming</h2>
-                  <div className="card-actions animate-fadeIn">
-                    <button className="btn btn-primary">Learn More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mx-4">
-              <div className="card bg-base-100 w-96 shadow-xl">
-                <figure className="px-10 pt-10">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Cybersecurity"
-                    className="rounded-xl"
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h2 className="card-title">Cybersecurity</h2>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Learn More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mx-4">
-              <div className="card bg-base-100 w-96 shadow-xl">
-                <figure className="px-10 pt-10">
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="News Outlets"
-                    className="rounded-xl"
-                  />
-                </figure>
-                <div className="card-body items-center text-center">
-                  <h2 className="card-title">News Outlets</h2>
-                  <div className="card-actions">
-                    <button className="btn btn-primary">Learn More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+{/* Resources section container */}
+<div id="resources-section" className={styles.resources}>
+  <h1>Resources</h1>
+  <p>sjssjsjsjssjsjsjsxnkxnk</p>
+  <div className="flex justify-around items-center">
+    {/* Programming Card */}
+    <div className="mx-4">
+      <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <figure className="px-10 pt-10 h-[250px]">
+          <img
+            src="images/programming.jpg"
+            alt="Programming"
+            className="rounded-xl object-cover w-full h-full"
+          />
+        </figure>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title text-white">Programming</h2>
+          <div className="card-actions animate-fadeIn">
+            <button className="btn btn-primary hover:bg-white hover:scale-105 transform transition-transform duration-300">
+              Explore
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+
+    {/* Cybersecurity Card */}
+    <div className="mx-4">
+      <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <figure className="px-10 pt-10 h-[250px]">
+          <img
+            src="images/cyber.jpg"
+            alt="Cybersecurity"
+            className="rounded-xl object-cover w-full h-full"
+          />
+        </figure>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title text-white">Cybersecurity</h2>
+          <div className="card-actions">
+            <button className="btn btn-primary hover:bg-blue-500 hover:scale-105 transform transition-transform duration-300">
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* News Outlets Card */}
+    <div className="mx-4">
+      <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <figure className="px-10 pt-10 h-[250px]">
+          <img
+            src="images/news.jpg"
+            alt="News Outlets"
+            className="rounded-xl object-cover w-full h-full"
+          />
+        </figure>
+        <div className="card-body items-center text-center">
+          <h2 className="card-title text-white">News Outlets</h2>
+          <div className="card-actions">
+            <button className="btn btn-primary hover:bg-blue-500 hover:scale-105 transform transition-transform duration-300">
+               Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       </main>
     </>
   );
