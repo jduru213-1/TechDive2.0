@@ -70,6 +70,7 @@
   transform: translateY(-10px); /* Moves the button up on hover */
 }
 
+
 /* Styles for background video (full-screen background) */
 .video {
   position: fixed; /* Fixes the position relative to the viewport */
@@ -79,6 +80,7 @@
   height: 100%; /* Sets full height of the viewport */
   object-fit: cover; /* Ensures the video covers the entire area */
 }
+
 
 /* Styles for the navigation bar */
 .header {
@@ -123,8 +125,8 @@
 /* Styles for image container with text box */
 .imgContainer {
   position: relative; /* Allows the textbox to be positioned relative to this container */
-  top: -65%; /* Moves the container up */
-  left: -30%; /* Moves the container to the left */
+  top: -65.99%; /* Moves the container up */
+  left: -100%; /* Moves the container to the left */
   bottom: 0; /* Aligns the bottom of the container */
   right: 0; /* Aligns the right side of the container */
 }
@@ -189,8 +191,8 @@
 /* Styles for the second image container */
 .imgContainer2 {
   position: relative; /* Allows the textbox to be positioned relative to this container */
-  top: -165%; /* Moves the container up */
-  left: 30%; /* Moves the container to the right */
+  top: -165.99%; /* Moves the container up */
+  left: 100%; /* Moves the container to the right */
   bottom: 0; /* Aligns the bottom of the container */
   right: 0; /* Aligns the right side of the container */
 }
@@ -262,6 +264,17 @@
   margin-top: -1150px; /* Moves the section up */
   padding: 5rem; /* Adds padding inside the section */
   animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
+}
+
+.motive button{
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  animation: popup 0.6s ease forwards; /* Applies animation */
+}
+
+.motive button button{
+  position: relative; /* Uses Flexbox layout */
+  color: white;
 }
 
 /* Keyframes for the fancyAnimation */
