@@ -261,8 +261,8 @@
   font-size: 50px; /* Sets the font size */
   text-align: center; /* Centers the text horizontally */
   white-space: nowrap; /* Prevents text from wrapping */
-  margin-top: -1150px; /* Moves the section up */
-  padding: 5rem; /* Adds padding inside the section */
+  margin-top: -1190px; /* Moves the section up */
+  padding: 3.5rem; /* Adds padding inside the section */
   animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
 }
 
@@ -275,6 +275,17 @@
 .motive button button{
   position: relative; /* Uses Flexbox layout */
   color: white;
+}
+
+.about h1{
+  color: rgb(255, 255, 255); /* White text color */
+  font-weight: 700; /* Bold text */
+  padding: 7rem; /* Adds padding around the heading */
+  font-size: 50px; /* Sets font size */
+  text-align: center; /* Centers text horizontally */
+  line-height: 1.2; /* Line height for text spacing */
+  white-space: nowrap; /* Prevents text from wrapping */
+  animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
 }
 
 /* Keyframes for the fancyAnimation */
