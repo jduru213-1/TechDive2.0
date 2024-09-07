@@ -2,7 +2,6 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import Head from "next/head";
 
-
 export default function Home() {
   return (
     <>
@@ -159,31 +158,32 @@ export default function Home() {
 
         {/* About Section */}
         <div id="about-section" className={styles.about}>
-    <h1>Purpose</h1>
-    <div className="card card-side bg-black shadow-xl -top-20 mx-auto w-[80%] border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-  <figure className="w-4/4">
-    <img
-      src="images/mission.jpg"
-      alt="Mission"
-      className="w-full h-full object-cover rounded-l-xl"
-    />
-  </figure>
-  <div className="card-body p-5 font-siz">   
-
-    <p className="text-white text-center leading-relaxed">
-      At Tech Dive, our mission is to empower individuals by demystifying the complex world of technology and cybersecurity. We are dedicated to fostering continuous learning by breaking down foundational concepts and presenting them in a clear and accessible manner.
-    </p>
-    <p className="text-white text-center leading-relaxed mt-4">
-      Through our platform, users will gain a comprehensive understanding of key cybersecurity principles and their critical role in today’s digital age. By focusing on practical insights and actionable knowledge, we help users enhance their ability to protect personal data and navigate the rapidly evolving tech landscape with confidence.
-    </p>
-    <p className="text-white text-center leading-relaxed mt-4">
-      We are committed to making cybersecurity knowledge approachable for everyone, ensuring that individuals from all backgrounds can grasp the essentials and apply them effectively to safeguard their digital presence.
-    </p>
-
-    <div className="card-actions justify-end"></div>
-  </div>
-</div>
-</div>
+          <h1>Purpose</h1>
+          <div className="-top-24 scale-92 card card-side bg-black shadow-xl mx-auto w-[100%] max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+            <figure className="w-2/3">
+              <img
+                src="images/mission.jpg"
+                alt="Mission"
+                className="w-full h-full object-cover rounded-l-xl"
+              />
+            </figure>
+            <div className="p-6 w-2/3">
+              <h2 className="text-lg font-semibold text-center mb-4">Why Tech Dive?</h2>
+              <p className="text-white text-center leading-relaxed text-sm">
+                At Tech Dive, our mission is to empower individuals by demystifying the complex world of technology and cybersecurity. We are dedicated to fostering continuous learning by breaking down foundational concepts and presenting them in a clear and accessible manner.
+              </p>
+              <h3 className="text-lg font-semibold text-center mt-8 mb-4">What is the Goal?</h3>
+              <p className="text-white text-center leading-relaxed text-sm">
+                Through our platform, users will gain a comprehensive understanding of key cybersecurity principles and their critical role in today’s digital age. By focusing on practical insights and actionable knowledge, we help users enhance their ability to protect personal data and navigate the rapidly evolving tech landscape with confidence.
+              </p>
+              <h3 className="text-lg font-semibold text-center mt-8 mb-4">What is the Purpose?</h3>
+              <p className="text-white text-center leading-relaxed text-sm">
+                We are committed to making cybersecurity knowledge approachable for everyone, ensuring that individuals from all backgrounds can grasp the essentials and apply them effectively to safeguard their digital presence.
+              </p>
+              <div className="card-actions justify-end"></div>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
