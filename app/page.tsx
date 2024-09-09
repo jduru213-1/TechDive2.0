@@ -159,7 +159,7 @@ export default function Home() {
         {/* About Section */}
         <div id="about-section" className={styles.about}>
           <h1>Purpose</h1>
-          <div className="-top-24 scale-92 card card-side bg-black shadow-xl mx-auto w-[100%] max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+          <div className="-top-24 scale-85 card card-side bg-black shadow-xl mx-auto w-[100%] max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <figure className="w-2/3">
               <img
                 src="images/mission.jpg"
