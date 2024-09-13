@@ -6,7 +6,7 @@ const Justin = () => {
   return (
     <div>
       {/* Profile Section */}
-      <div className="flex flex-col justify-center items-center h-screen -mt-40">
+      <div className="flex flex-col justify-center items-center h-screen -mt-4">
         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
           <img 
             src="/images/justin.jpg" 
@@ -27,7 +27,7 @@ const Justin = () => {
           </a>
 
           <a 
-            href="mailto:example@example.com" 
+            href="mailto:jduru213@gmail.com" 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -50,8 +50,9 @@ const Justin = () => {
             <AiFillMediumSquare size={45} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
           </a>
         </div>
-        <p className="flex mt-10 text-xl font-bold text-gray-100 animate-fadeAndZoom"> As a dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president of the African Student Association, I use my position to foster a diverse and inclusive community on campus. </p>
+        <p className="flex mt-10 text-xl text-gray-300 animate-fadeAndZoom"> As a dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president of the African Student Association, I use my position to foster a diverse and inclusive community on campus. </p>
       </div>
+      
       <div className="carousel w-full border-4 border-gray-300 rounded-lg">
   <div id="slide1" className="carousel-item relative w-full">
     <img
@@ -214,8 +215,11 @@ const Justin = () => {
             </div>
           </li>
         </ul>
+        
+        
       </div>
     </div>
+    
   
   );
 };
