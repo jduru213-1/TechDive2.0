@@ -15,7 +15,7 @@ const Justin = () => {
           />
         </div>
         <h1 className="mt-2 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
-        <h3 className="flex mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">SIEM Instructor | Cybersecurity | Security Program Manager</h3>
+        <h3 className="flex mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">SIEM Apprentice Instructor | Security Program Manager</h3>
         
         <div className="flex space-x-4 mt-4">
           <a 
@@ -50,7 +50,7 @@ const Justin = () => {
             <AiFillMediumSquare size={45} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
           </a>
         </div>
-        <p className="flex mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">  </p>
+        <p className="flex mt-10 text-xl font-bold text-gray-100 animate-fadeAndZoom"> As a dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president of the African Student Association, I use my position to foster a diverse and inclusive community on campus. </p>
       </div>
       <div className="carousel w-full border-4 border-gray-300 rounded-lg">
   <div id="slide1" className="carousel-item relative w-full">
