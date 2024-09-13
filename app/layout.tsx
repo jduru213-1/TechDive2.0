@@ -21,11 +21,11 @@ export default function RootLayout({
         {/* Navigation */}
         <header className={`${styles.header} animate-slideDown bg-gradient-to-r from-black to-black p-3 shadow-lg rounded-lg`}>
           <a href="/#" className={`${styles.logo} animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105`}>TECH DIVE</a>
-          <nav className={`${styles.navbar} flex flex-wrap space-x-4 mt-2 justify-center md:justify-start`}>
-            <a href="/#" className="animate-fadeIn text-gray-100 hover:text-white transition-colors duration-300 ease-in-out rounded-lg py-1 px-3 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400">Home</a>
-            <a href="/#motive-section" className="animate-fadeIn text-gray-100 hover:text-white transition-colors duration-300 ease-in-out rounded-lg py-1 px-3 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400">Story</a>
-            <a href="/#resources-section" className="animate-fadeIn text-gray-100 hover:text-white transition-colors duration-300 ease-in-out rounded-lg py-1 px-3 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400">Resources</a>
-            <a href="/#about-section" className="animate-fadeIn text-gray-100 hover:text-white transition-colors duration-300 ease-in-out rounded-lg py-1 px-3 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400">About</a>
+          <nav className={`${styles.navbar} flex flex-wrap space-x-10 mt-2 justify-center md:justify-start`}>
+            <a href="/#" className=" animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105">Home</a>
+            <a href="/#motive-section" className=" animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105">Story</a>
+            <a href="/#resources-section" className=" animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105">Resources</a>
+            <a href="/#about-section" className=" animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105">About</a>
           </nav>
         </header>
 
