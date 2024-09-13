@@ -96,24 +96,6 @@
   z-index: 100; /* Ensures the header is above other content */
 }
 
-/* Styles for navigation bar links */
-.navbar a {
-  font-size: 13px; /* Sets font size */
-  color: white; /* White text color */
-  font-weight: 500; /* Medium weight text */
-  text-decoration: none; /* Removes underline from links */
-  margin-left: 40px; /* Adds space between links */
-}
-
-/* Styles for the pseudo-element before navigation bar links */
-.navbar a::before {
-  content: ''; /* Empty content for the pseudo-element */
-  position: absolute; /* Positions the pseudo-element absolutely */
-  top: 0; /* Aligns the top of the pseudo-element */
-  left: 0; /* Aligns the left of the pseudo-element */
-  width: 100%; /* Sets full width */
-  height: 2px; /* Sets height of the pseudo-element */
-}
 
 /* Styles for the "TECH DIVE" logo */
 .logo {
@@ -262,7 +244,7 @@
   text-align: center; /* Centers the text horizontally */
   white-space: nowrap; /* Prevents text from wrapping */
   margin-top: -1190px; /* Moves the section up */
-  padding: 3.5rem; /* Adds padding inside the section */
+  padding: 6.5rem; /* Adds padding inside the section */
   animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
 }
 
@@ -277,10 +259,11 @@
   color: white;
 }
 
-.about h1{
+
+.about {
   color: rgb(255, 255, 255); /* White text color */
   font-weight: 700; /* Bold text */
-  padding: 7rem; /* Adds padding around the heading */
+  padding: 25rem; /* Adds padding around the heading */
   font-size: 50px; /* Sets font size */
   text-align: center; /* Centers text horizontally */
   line-height: 1.2; /* Line height for text spacing */
@@ -335,5 +318,8 @@
   100% {
     opacity: 1; /* Fully visible */
     transform: scale(1); /* Scales to original size */
+    
   }
+
+  
 }

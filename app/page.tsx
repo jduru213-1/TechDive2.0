@@ -51,40 +51,31 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Navigation */}
-        <header className={styles.header}>
-          <a href="#" className={styles.logo}>TECH DIVE</a>
-          <nav className={styles.navbar}>
-            <a href="#">Home</a>
-            <a href="#motive-section">Story</a>
-            <a href="#resources-section">Resources</a>
-            <a href="#about-section">About</a>
-          </nav>
-        </header>
-
         {/* Profile Sections */}
         <div className={styles.profileSections}>
           {/* Justin section container */}
-          <Link href='/users'>
+          <Link href='/justin'>
             <div className={styles.Justin}>
               <div className={styles.imgContainer}>
                 <img src="/images/Justin.jpg" width={175} height={175} alt="Justin Duru" />
                 <div className={styles.textbox}>
-                  <Link href="/users"><button>View Profile</button></Link>
+                  <button>View Profile</button>
                 </div>
               </div>
             </div>
           </Link>
 
           {/* Courage section container */}
-          <div className={styles.courage}>
-            <div className={styles.imgContainer2}>
-              <img src="/images/courage.jpg" width={175} height={175} alt="Courage Tikum" />
-              <div className={styles.textbox2}>
-                <button>View Profile</button>
+          <Link href='/courage'>
+            <div className={styles.courage}>
+              <div className={styles.imgContainer2}>
+                <img src="/images/courage.jpg" width={175} height={175} alt="Courage Tikum" />
+                <div className={styles.textbox2}>
+                  <button>View Profile</button>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Resources Section */}
@@ -101,14 +92,16 @@ export default function Home() {
                     className="rounded-xl object-cover w-full h-full"
                   />
                 </figure>
-                <div className="card-body items-center text-center">
-                  <h2 className="card-title text-white">Programming</h2>
-                  <div className="card-actions animate-fadeIn">
-                    <button className="btn btn-primary hover:bg-white hover:scale-105 transform transition-transform duration-300">
-                      Explore
-                    </button>
+                <Link href='/programming'>
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title text-white">Programming</h2>
+                    <div className="card-actions animate-fadeIn">
+                      <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+                        Explore
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
 
@@ -125,7 +118,7 @@ export default function Home() {
                 <div className="card-body items-center text-center">
                   <h2 className="card-title text-white">Cybersecurity</h2>
                   <div className="card-actions">
-                    <button className="btn btn-primary hover:bg-blue-500 hover:scale-105 transform transition-transform duration-300">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
                       Explore
                     </button>
                   </div>
@@ -146,7 +139,7 @@ export default function Home() {
                 <div className="card-body items-center text-center">
                   <h2 className="card-title text-white">News Outlets</h2>
                   <div className="card-actions">
-                    <button className="btn btn-primary hover:bg-blue-500 hover:scale-105 transform transition-transform duration-300">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
                       Explore
                     </button>
                   </div>
@@ -156,34 +149,32 @@ export default function Home() {
           </div>
         </div>
 
-        {/* About Section */}
-        <div id="about-section" className={styles.about}>
-          <h1>Purpose</h1>
-          <div className="-top-24 scale-85 card card-side bg-black shadow-xl mx-auto w-[100%] max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <figure className="w-2/3">
-              <img
-                src="images/mission.jpg"
-                alt="Mission"
-                className="w-full h-full object-cover rounded-l-xl"
-              />
-            </figure>
-            <div className="p-6 w-2/3">
-              <h2 className="text-lg font-semibold text-center mb-4">Why Tech Dive?</h2>
-              <p className="text-white text-center leading-relaxed text-sm">
-                At Tech Dive, our mission is to empower individuals by demystifying the complex world of technology and cybersecurity. We are dedicated to fostering continuous learning by breaking down foundational concepts and presenting them in a clear and accessible manner.
-              </p>
-              <h3 className="text-lg font-semibold text-center mt-8 mb-4">What is the Goal?</h3>
-              <p className="text-white text-center leading-relaxed text-sm">
-                Through our platform, users will gain a comprehensive understanding of key cybersecurity principles and their critical role in today’s digital age. By focusing on practical insights and actionable knowledge, we help users enhance their ability to protect personal data and navigate the rapidly evolving tech landscape with confidence.
-              </p>
-              <h3 className="text-lg font-semibold text-center mt-8 mb-4">What is the Purpose?</h3>
-              <p className="text-white text-center leading-relaxed text-sm">
-                We are committed to making cybersecurity knowledge approachable for everyone, ensuring that individuals from all backgrounds can grasp the essentials and apply them effectively to safeguard their digital presence.
-              </p>
-              <div className="card-actions justify-end"></div>
-            </div>
-          </div>
-        </div>
+        <div id="about-section" className="relative mb-11">
+  <h1 className="text-6xl font-bold text-center text-white mt-40">Purpose</h1>
+  <div className="flex justify-center mt-2">
+    <div className="scale-95 card card-side bg-black shadow-xl w-full max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 rounded-lg overflow-hidden">
+      <figure className="flex-shrink-0 w-full md:w-1/2">
+        <img
+          src="images/mission.jpg"
+          alt="Mission"
+          className="w-full h-full object-cover rounded-l-lg"
+        />
+      </figure>
+      <div className="p-6 md:w-1/2">
+        <h2 className="text-xl font-semibold text-white text-center mb-4">Why Tech Dive?</h2>
+        <p className="text-gray-300 text-center leading-relaxed text-sm">
+          At Tech Dive, our mission is to empower individuals by demystifying the complex world of technology and cybersecurity. We are dedicated to fostering continuous learning by breaking down foundational concepts and presenting them in a clear and accessible manner.
+        </p>
+        <h2 className="text-xl font-semibold text-white text-center mt-8 mb-4">What is the Goal?</h2>
+        <p className="text-gray-300 text-center leading-relaxed text-sm">
+          Through our platform, users will gain a comprehensive understanding of key cybersecurity principles and their critical role in today’s digital age. By focusing on practical insights and actionable knowledge, we help users enhance their ability to protect personal data and navigate the rapidly evolving tech landscape with confidence.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       </main>
     </>
   );
