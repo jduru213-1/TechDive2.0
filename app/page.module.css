@@ -260,16 +260,7 @@
 }
 
 
-.about {
-  color: rgb(255, 255, 255); /* White text color */
-  font-weight: 700; /* Bold text */
-  padding: 25rem; /* Adds padding around the heading */
-  font-size: 50px; /* Sets font size */
-  text-align: center; /* Centers text horizontally */
-  line-height: 1.2; /* Line height for text spacing */
-  white-space: nowrap; /* Prevents text from wrapping */
-  animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
-}
+
 
 /* Keyframes for the fancyAnimation */
 @keyframes fancyAnimation {

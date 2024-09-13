@@ -151,7 +151,7 @@ export default function Home() {
 
         <div id="about-section" className="relative mb-11">
   <h1 className="text-6xl font-bold text-center text-white mt-40">Purpose</h1>
-  <div className="flex justify-center mt-2">
+  <div className="flex justify-center mb-32 ">
     <div className="scale-95 card card-side bg-black shadow-xl w-full max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 rounded-lg overflow-hidden">
       <figure className="flex-shrink-0 w-full md:w-1/2">
         <img
@@ -173,6 +173,7 @@ export default function Home() {
     </div>
   </div>
 </div>
+
 
 
       </main>
