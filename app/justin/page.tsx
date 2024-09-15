@@ -2,6 +2,7 @@ import React from 'react';
 import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare } from 'react-icons/ai';
 import Link from 'next/link';
 
+
 const Justin = () => {
   return (
     <div>
@@ -52,48 +53,82 @@ const Justin = () => {
         </div>
         <p className="flex mt-10 text-xl text-gray-300 animate-fadeAndZoom"> As a dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president of the African Student Association, I use my position to foster a diverse and inclusive community on campus. </p>
       </div>
-      
-      <div className="carousel w-full border-4 border-gray-300 rounded-lg">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" className="btn btn-circle">❮</a>
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide2" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" className="btn btn-circle">❮</a>
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" className="btn btn-circle">❮</a>
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide4" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" className="btn btn-circle">❮</a>
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-      
+
+
+      <h1 className="mt-10 text-6xl font-bold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
+      <div className="flex justify-around items-center">
+            {/* Programming Card */}
+            <div className="mx-4">
+              <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+                <figure className="px-10 pt-10 h-[250px]">
+                  <img
+                    src="images/programming.jpg"
+                    alt="Programming"
+                    className="rounded-xl object-cover w-full h-full"
+                  />
+                </figure>
+                <Link href='/programming'>
+                  <div className="card-body items-center text-center">
+                    <h2 className="card-title text-white">Programming</h2>
+                    <div className="card-actions animate-fadeIn">
+                      <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+                        Explore
+                      </button>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            {/* Cybersecurity Card */}
+            <div className="mx-4">
+              <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+                <figure className="px-10 pt-10 h-[250px]">
+                  <img
+                    src="images/cyber.jpg"
+                    alt="Cybersecurity"
+                    className="rounded-xl object-cover w-full h-full"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title text-white">Cybersecurity</h2>
+                  <div className="card-actions">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* News Outlets Card */}
+            <div className="mx-4">
+              <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+                <figure className="px-10 pt-10 h-[250px]">
+                  <img
+                    src="images/tines.jpeg"
+                    alt="News Outlets"
+                    className="rounded-xl object-cover w-full h-full"
+                  />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <h2 className="card-title text-white">News Outlets</h2>
+                  <div className="card-actions">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+<h1 className="mt-40 mb-8 text-6xl font-bold text-gray-100 animate-fadeAndZoom text-center">Education & Expereicne </h1>      
       {/* Timeline Section */}
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-25">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
@@ -218,6 +253,7 @@ const Justin = () => {
         
         
       </div>
+      
     </div>
     
   
