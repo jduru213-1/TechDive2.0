@@ -8,7 +8,7 @@ const Couragepage = () => {
       <div className="flex flex-col justify-center items-center h-screen -mt-40">
         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
           <img 
-            src="/images/courage.jpg" 
+            src="/images/Courage2.jpg" 
             alt="courage" 
             className="w-full h-full"
           />
@@ -27,7 +27,7 @@ const Couragepage = () => {
           </a>
 
           <a 
-            href="mailto:example@example.com" 
+            href="mailto:mctikum0@frostburg.edu?cc=couragetikum@gmail.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform transform hover:scale-110"
@@ -36,7 +36,7 @@ const Couragepage = () => {
           </a>
 
           <a 
-            href="https://www.example.com" 
+            href="https://docs.google.com/document/d/1wSgEtoFXH6y1dLjL7pKwdqwOJ9X1JoZT7ysAdPUO8bo/edit?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer"
             className="transition-transform transform hover:scale-110"
@@ -72,13 +72,12 @@ const Couragepage = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">1984</time>
-              <div className="text-lg font-black">First Macintosh computer</div>
-              The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
-              personal computer. It played a pivotal role in establishing desktop publishing as a general
-              office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
-              in a beige case with integrated carrying handle; it came with a keyboard and single-button
-              mouse.
+            <img src="/images/fsu.jpg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
+              <time className="font-mono italic text-base text-gray-100 text-left">August 2020</time>
+              <div className="text-lg font-black text-base text-gray-100 text-left">Frostburg State University</div>
+              <p className='text-base text-gray-100 text-left'>
+              Officially enrolled at Frostburg State Univesity with a major in Computer Science and Minor in Mathemathics 
+              </p>
             </div>
             <hr />
           </li>
@@ -97,11 +96,13 @@ const Couragepage = () => {
               </svg>
             </div>
             <div className="timeline-end mb-10">
-              <time className="font-mono italic">1998</time>
-              <div className="text-lg font-black">iMac</div>
-              iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
-              been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
-              and has evolved through seven distinct forms.
+            <img src="/images/SPARKLabs.jpg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
+              <time className="font-mono italic text-base text-gray-100 text-left">January 2023</time>
+              <div className="text-lg font-black text-base text-gray-100 text-left">Frostburg State University</div>
+              <p className='text-base text-gray-100 text-left'>
+              Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
+              practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
+              </p>
             </div>
             <hr />
           </li>
@@ -120,13 +121,13 @@ const Couragepage = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">2001</time>
-              <div className="text-lg font-black">iPod</div>
-              The iPod is a discontinued series of portable media players and multi-purpose mobile devices
-              designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
-              8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
-              million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
-              over 20 years, the iPod brand is the oldest to be discontinued by Apple.
+            <img src="/images/twc.jpeg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
+              <time className="font-mono italic text-base text-gray-100 text-left">May 2024</time>
+              <div className="text-lg font-black text-base text-gray-100 text-left">The Washington Center</div>
+              <p className='text-base text-gray-100 text-left'>
+              Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
+              practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
+              </p>
             </div>
             <hr />
           </li>
@@ -145,13 +146,14 @@ const Couragepage = () => {
               </svg>
             </div>
             <div className="timeline-end mb-10">
-              <time className="font-mono italic">2007</time>
-              <div className="text-lg font-black">iPhone</div>
-              iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
-              operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
-              January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
-              of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
-              accounts for 15.6% of global smartphone market share.
+            <img src="/images/twc.jpeg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
+              <time className="font-mono italic text-base text-gray-100 text-left">May 2024</time>
+              <div className="text-lg font-black text-base text-gray-100 text-left">Devlopment monitors</div>
+              <p className='text-base text-gray-100 text-left'>
+              Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
+              practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
+              </p>
+  
             </div>
             <hr />
           </li>
@@ -170,8 +172,8 @@ const Couragepage = () => {
               </svg>
             </div>
             <div className="timeline-start mb-10 md:text-end">
-              <time className="font-mono italic">2015</time>
-              <div className="text-lg font-black">Apple Watch</div>
+              <time className="font-mono italic">June 10</time>
+              <div className="text-lg font-black">Iorn Shapens Iorn</div>
               The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
               tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
               iOS and other Apple products and services.

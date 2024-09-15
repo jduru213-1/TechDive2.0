@@ -20,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Navigation */}
         <header className={`${styles.header} animate-slideDown bg-gradient-to-r from-black to-black p-3 shadow-lg rounded-lg`}>
+          <img src="/images/LOGO.png" width={50} height={150} alt="Courage Tikum" />
           <a href="/#" className={`${styles.logo} animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105`}>TECH DIVE</a>
           <nav className={`${styles.navbar} flex flex-wrap space-x-10 mt-2 justify-center md:justify-start`}>
             <a href="/#" className=" animate-fadeIn text-2.5xl font-extrabold text-white transition-transform transform hover:scale-105">Home</a>

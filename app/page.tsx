@@ -11,6 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         {/* Background Video */}
         <video
           src="/background.mp4"
@@ -69,7 +70,7 @@ export default function Home() {
           <Link href='/courage'>
             <div className={styles.courage}>
               <div className={styles.imgContainer2}>
-                <img src="/images/courage.jpg" width={175} height={175} alt="Courage Tikum" />
+                <img src="/images/Courage2.jpg" width={175} height={175} alt="Courage Tikum" />
                 <div className={styles.textbox2}>
                   <button>View Profile</button>
                 </div>
