@@ -8,7 +8,7 @@ const Couragepage = () => {
       <div className="flex flex-col justify-center items-center h-screen -mt-40">
         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
           <img 
-            src="/images/courage.jpg" 
+            src="/images/Courage2.jpg" 
             alt="courage" 
             className="w-full h-full"
           />
