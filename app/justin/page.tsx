@@ -121,108 +121,111 @@ const Justin = () => {
 <h1 className="mt-40 mb-2 text-6xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
 
-<ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical relative">
-  <li className="transition-transform duration-500 hover:scale-105">
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end  border-white p-4 transition-opacity duration-500 hover:opacity-80">
-      <img src="/images/fsu.jpg" alt="Frostburg State University" className="w-20 h-20 rounded-full relative" />
-      <p className="font-mono italic text-gray-100 font-bold text-left">August 2023</p>
-      <div className="text-lg font-black text-gray-100 text-left">Frostburg State University</div>
-      <p className="text-base text-gray-100 text-left">
-        Enrolled at Frostburg State University, pursuing a Bachelor of Science in Cybersecurity and Information Assurance degree.
-      </p>
-    </div>
-    <hr />
-  </li>
+{/*Timeline Section */}
+<div className = "flex justify-center mt-20">
+  <ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical relative">
+    <li className="transition-transform duration-500 hover:scale-105">
+      <div className="timeline-middle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-5 w-5">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="timeline-start mb-10 md:text-end  border-white p-4 transition-opacity duration-500 hover:opacity-80">
+        <img src="/images/fsu.jpg" alt="Frostburg State University" className="w-20 h-20 rounded-full relative" />
+        <p className="font-mono italic text-gray-100 font-bold text-left">August 2023</p>
+        <div className="text-lg font-black text-gray-100 text-left">Frostburg State University</div>
+        <p className="text-base text-gray-100 text-left">
+          Enrolled at Frostburg State University, pursuing a Bachelor of Science in Cybersecurity and Information Assurance degree.
+        </p>
+      </div>
+      <hr />
+    </li>
+    
+    <li className="transition-transform duration-500 hover:scale-105">
+      <hr />
+      <div className="timeline-middle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-5 w-5">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+        <img src="/images/twc.jpeg" alt="TWC Internship" className="w-20 h-20 rounded-full" />
+        <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
+        <div className="text-lg font-black text-gray-100">Student Intern - TWC</div>
+        <p className="text-base text-gray-100">
+          The iMac is Apple's all-in-one desktop that revolutionized personal computing when it launched in 1998. Its
+          sleek design and user-friendly features have shaped Apple's desktop line for over two decades.
+        </p>
+      </div>
+      <hr />
+    </li>
 
-  <li className="transition-transform duration-500 hover:scale-105">
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
-      <img src="/images/twc.jpeg" alt="TWC Internship" className="w-20 h-20 rounded-full" />
-      <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
-      <div className="text-lg font-black text-gray-100">Student Intern - TWC</div>
-      <p className="text-base text-gray-100">
-        The iMac is Apple's all-in-one desktop that revolutionized personal computing when it launched in 1998. Its
-        sleek design and user-friendly features have shaped Apple's desktop line for over two decades.
-      </p>
-    </div>
-    <hr />
-  </li>
+    <li className="transition-transform duration-500 hover:scale-105">
+      <hr />
+      <div className="timeline-middle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-5 w-5">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+        <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full" />
+        <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
+        <div className="text-lg font-black text-gray-100">Security Program Manager Intern - Ellington Cyber Academy</div>
+        <p className="text-base text-gray-100">
+          The iPhone, introduced in 2007, revolutionized the smartphone industry. With over 2.2 billion units sold, it
+          remains a major player, accounting for over 15% of the global smartphone market.
+        </p>
+      </div>
+      <hr />
+    </li>
 
-  <li className="transition-transform duration-500 hover:scale-105">
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
-      <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full" />
-      <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
-      <div className="text-lg font-black text-gray-100">Security Program Manager Intern - Ellington Cyber Academy</div>
-      <p className="text-base text-gray-100">
-        The iPhone, introduced in 2007, revolutionized the smartphone industry. With over 2.2 billion units sold, it
-        remains a major player, accounting for over 15% of the global smartphone market.
-      </p>
-    </div>
-    <hr />
-  </li>
-
-  <li className="transition-transform duration-500 hover:scale-105">
-    <hr />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
-      <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full relative" />
-      <p className="font-mono italic text-gray-100 font-bold text-left">Current - 2024</p>
-      <div className="text-lg font-black text-gray-100 text-left">SIEM Instructor - Ellington Cyber Academy</div>
-      <p className="text-base text-gray-100 text-left">
-        The Apple Watch, launched in 2015, brought fitness tracking and smart technology to the wrist. Seamlessly
-        integrating with the Apple ecosystem, it remains a popular choice for health and connectivity.
-      </p>
-    </div>
-  </li>
-</ul>
+    <li className="transition-transform duration-500 hover:scale-105">
+      <hr />
+      <div className="timeline-middle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="h-5 w-5">
+          <path
+            fillRule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+            clipRule="evenodd" />
+        </svg>
+      </div>
+      <div className="timeline-start mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
+        <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full relative" />
+        <p className="font-mono italic text-gray-100 font-bold text-left">Current - 2024</p>
+        <div className="text-lg font-black text-gray-100 text-left">SIEM Instructor - Ellington Cyber Academy</div>
+        <p className="text-base text-gray-100 text-left">
+          The Apple Watch, launched in 2015, brought fitness tracking and smart technology to the wrist. Seamlessly
+          integrating with the Apple ecosystem, it remains a popular choice for health and connectivity.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
 
 
 <div className="flex items-center justify-center space-x-4 mt-6 mb-8">
