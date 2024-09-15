@@ -66,7 +66,6 @@ const Justin = () => {
       <div className="card-body flex flex-col items-center justify-center text-center h-full">
         <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
         <p className="mt-2 text-gray-100">Learn how Active Directory (AD) manages user accounts and policies, and how detection monitoring enhances security by tracking suspicious activities. Explore how these tools protect your network</p>
-
         <div className="card-actions animate-fadeIn mt-4">
           
           <Link href= "https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
@@ -136,7 +135,7 @@ const Justin = () => {
           clipRule="evenodd" />
       </svg>
     </div>
-    <div className="timeline-start mb-10 md:text-end border-4 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="timeline-start mb-10 md:text-end  border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/fsu.jpg" alt="Frostburg State University" className="w-20 h-20 rounded-full relative" />
       <p className="font-mono italic text-gray-100 font-bold text-left">August 2023</p>
       <div className="text-lg font-black text-gray-100 text-left">Frostburg State University</div>
@@ -161,7 +160,7 @@ const Justin = () => {
           clipRule="evenodd" />
       </svg>
     </div>
-    <div className="timeline-end mb-10 border-4 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/twc.jpeg" alt="TWC Internship" className="w-20 h-20 rounded-full" />
       <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
       <div className="text-lg font-black text-gray-100">Student Intern - TWC</div>
@@ -187,7 +186,7 @@ const Justin = () => {
           clipRule="evenodd" />
       </svg>
     </div>
-    <div className="timeline-end mb-10 border-4 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full" />
       <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
       <div className="text-lg font-black text-gray-100">Security Program Manager Intern - Ellington Cyber Academy</div>
@@ -213,7 +212,7 @@ const Justin = () => {
           clipRule="evenodd" />
       </svg>
     </div>
-    <div className="timeline-start mb-10 md:text-end border-4 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="timeline-start mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full relative" />
       <p className="font-mono italic text-gray-100 font-bold text-left">Current - 2024</p>
       <div className="text-lg font-black text-gray-100 text-left">SIEM Instructor - Ellington Cyber Academy</div>

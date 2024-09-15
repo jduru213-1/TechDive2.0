@@ -115,6 +115,7 @@ export default function Home() {
                     className="rounded-xl object-cover w-full h-full"
                   />
                 </figure>
+                <Link href="/cybersecurity">
                 <div className="card-body items-center text-center">
                   <h2 className="card-title text-white">Cybersecurity</h2>
                   <div className="card-actions">
@@ -123,6 +124,7 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
 
