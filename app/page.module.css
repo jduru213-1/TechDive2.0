@@ -260,8 +260,6 @@
 }
 
 
-
-
 /* Keyframes for the fancyAnimation */
 @keyframes fancyAnimation {
   0% {
@@ -310,7 +308,5 @@
     opacity: 1; /* Fully visible */
     transform: scale(1); /* Scales to original size */
     
-  }
-
-  
+  }  
 }
