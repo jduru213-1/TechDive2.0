@@ -43,7 +43,7 @@ const Justin = () => {
     </div>
 
     {/* Profile Description */}
-    <p className="flex mt-20 text-xl text-gray-300 text-center">
+    <p className="flex mt-20 text-xl text-gray-100 text-center animate ">
       Dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. 
       My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my 
       knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president 
