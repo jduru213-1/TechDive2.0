@@ -6,10 +6,6 @@ import { SiJira, SiSplunk, SiAwssecretsmanager } from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
 
 
-
-
-
-
 const Justin = () => {
   return (
     <div>
