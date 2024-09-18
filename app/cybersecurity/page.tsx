@@ -55,7 +55,7 @@ const Cybersecurity = () => {
         Welcome to the Cybersecurity Hub! Here, you will find everything you need to sharpen your skills and stay ahead in digital security. From our weekly cybersecurity tips and interactive Spot the Phish game to the Password Strength Tester and the Cybersecurity Professional Quiz, we offer practical tools and engaging challenges to help you master the essentials of online safety.
       </p>
 
-      <div className="flex flex-col items-center mt-40">
+      <div className="flex flex-col items-center mt-20">
         <GiBrain
           size={100}
           className="text-blue-100 mb-4 hover:text-pink-600 transition-colors duration-300"
@@ -63,15 +63,14 @@ const Cybersecurity = () => {
         <h1 className="text-4xl font-bold text-gray-100 animate-fadeAndZoom">
           DAILY TIP
          </h1>
-         <p className="mt-2 text-l text-gray-100 animate-fadeAndZoom text-center">Start your day with a dose of cybersecurity wisdom</p>
-        <div className="w-88 h-auto bg-gray-300 mt-6 rounded-lg p-4 animate-bounce ">
-          <p className="text-gray-700">{weeklyTip}</p>
+        <div className="w-95 h-auto bg-gray-100 mt-8 rounded-2lg p-8 animate-bounce  ">
+          <p className="text-gray-900">{weeklyTip}</p>
         </div>
 
 {/* Projects Section */}
-<div className="flex flex-col items-center justify-center h-full mt-40">
+<div className="flex flex-col items-center justify-center h-full mt-20">
   {/* Icon */}
-  <GrResources size={100} className="text-blue-100" />
+  <GrResources size={100} className="text-blue-100  hover:text-yellow-400 transition-colors duration-30" />
 
   {/* Heading */}
   <h1 className=" text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
