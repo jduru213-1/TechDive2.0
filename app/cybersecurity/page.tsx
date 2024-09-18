@@ -4,10 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { GiCyberEye, GiBrain } from 'react-icons/gi';
 import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare, } from 'react-icons/ai';
 import Link from 'next/link';
-import { FaSchool,FaSuitcase, FaLaptop,FaChalkboardTeacher,FaConfluence, FaWindows, FaPen} from "react-icons/fa";
+import { FaSchool,FaSuitcase, FaLaptop,FaChalkboardTeacher,FaConfluence, FaWindows, FaPen, FaRoad} from "react-icons/fa";
 import { SiJira, SiSplunk, SiAwssecretsmanager } from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
-import { GrResources } from "react-icons/gr";
+import { GrAid, GrResources } from "react-icons/gr";
+import Quiz from '../components/cyberQuiz';
 
 
 const Cybersecurity = () => {
@@ -51,7 +52,7 @@ const Cybersecurity = () => {
       <p className="mt-3 font-extrabold text-gray-100 animate-fadeAndZoom">
         “To be secure, you must be vigilant. To be vigilant, you must be aware.”
       </p>
-      <p className="flex mt-20 text-xl text-gray-300 text-center">
+      <p className="flex mt-20 text-xl text-gray-300 text-center ">
         Welcome to the Cybersecurity Hub! Here, you will find everything you need to sharpen your skills and stay ahead in digital security. From our weekly cybersecurity tips and interactive Spot the Phish game to the Password Strength Tester and the Cybersecurity Professional Quiz, we offer practical tools and engaging challenges to help you master the essentials of online safety.
       </p>
 
@@ -78,7 +79,7 @@ const Cybersecurity = () => {
   </h1>
 
   {/* Paragraph */}
-  <p className="mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">
+  <p className="flex flex-col mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">
     Set up a controlled environment to test and experiment with SIEM tools and techniques safely and effectively
   </p>
 
@@ -141,12 +142,26 @@ const Cybersecurity = () => {
         </div>
       </div>
     </div>
+    <div>
+
+    <div className="flex flex-col items-center justify-center h-full mt-40">
+      {/* Icon */}
+        <FaRoad size={100} className="text-blue-100 hover:text-yellow-400 transition-colors duration-30" />
+          {/* Heading */} 
+          <h1 className=" text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center mt-3">
+          FIND YOUR CYBERSECURITY CAREER 
+          </h1>
+          <p className="flex flex-col mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">
+          Take our interactive quiz to explore which cybersecurity career path aligns with your skills and interests</p>
+          </div>
+          <div className=" w-95 h-auto mt-5 mb-10 p-8">
+          <Quiz />
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-
-
-    </div>
     
   );
 };
