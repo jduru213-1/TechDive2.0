@@ -15,10 +15,10 @@ const Justin = () => {
       <img src="/images/justin.jpg" alt="justin" className="w-full h-full" />
     </div>
     <h1 className="mt-2 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
-    <h3 className="flex flex-col mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
+    <h3 className="flex mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
       SIEM Apprentice Instructor | Security Program Manager
     </h3>
-    <p className="flex flex-col mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">
+    <p className="flex mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">
       "Every disappointment is a blessing in disguise"
     </p>
 
@@ -39,7 +39,7 @@ const Justin = () => {
     </div>
 
     {/* Profile Description */}
-    <p className="flex flex-col mt-20 text-xl text-gray-100 text-center animate ">
+    <p className="flex mt-20 text-xl text-gray-100 text-center animate ">
       Dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. 
       My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my 
       knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president 
@@ -48,12 +48,12 @@ const Justin = () => {
   </div>
 
   {/* Projects Section */}
-  <h1 className="flex flex-col mt-20 text-6xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
+  <h1 className="mt-20 text-6xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
   <p className="mt-2 text-gray-100 animate-fadeAndZoom text-center">
     A display of my most recent works, projects, and developments.
   </p>
 
-  <div className="flex flex-col justify-around items-center mt-6">
+  <div className="flex justify-around items-center mt-6">
     {/* Project 1 */}
     <div className="mx-4">
       <div className="card bg-black w-80 h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">

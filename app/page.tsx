@@ -22,7 +22,7 @@ export default function Home() {
         />
 
         {/* Main Content */}
-        <div className={styles.contents}>
+        <div className={styles.contents} >
           {/* Main Heading */}
           <h1>
             Discover the Future of Tech<br />Unlock New Possibilities

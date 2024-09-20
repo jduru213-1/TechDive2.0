@@ -5,7 +5,7 @@ import { GiCyberEye, GiBrain } from 'react-icons/gi';
 import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare, } from 'react-icons/ai';
 import Link from 'next/link';
 import { FaSchool,FaSuitcase, FaLaptop,FaChalkboardTeacher,FaConfluence, FaWindows, FaPen, FaRoad} from "react-icons/fa";
-import { SiJira, SiSplunk, SiAwssecretsmanager } from "react-icons/si";
+import { SiJira, SiSplunk, SiAwssecretsmanager,SiNintendogamecube  } from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
 import { GrAid, GrResources } from "react-icons/gr";
 import Quiz from '../components/cyberQuiz';
@@ -49,8 +49,8 @@ const Cybersecurity = () => {
         </h1>
       </div>
 
-      <p className="mt-3 font-extrabold text-gray-100 animate-fadeAndZoom">
-        “To be secure, you must be vigilant. To be vigilant, you must be aware.”
+      <p className="mt-1 text-gray-100 animate-fadeAndZoom">
+        To be secure, you must be vigilant. To be vigilant, you must be aware
       </p>
       <p className="flex mt-20 text-xl text-gray-300 text-center ">
         Welcome to the Cybersecurity Hub! Here, you will find everything you need to sharpen your skills and stay ahead in digital security. From our weekly cybersecurity tips and interactive Spot the Phish game to the Password Strength Tester and the Cybersecurity Professional Quiz, we offer practical tools and engaging challenges to help you master the essentials of online safety.
@@ -144,6 +144,38 @@ const Cybersecurity = () => {
     </div>
     <div>
 
+    <div className="flex flex-col justify-center items-center h-screen mt-20 mb-40 space-y-0">
+  <SiNintendogamecube
+    size={100}
+    className="text-blue-100 mb-4 hover:text-red-600 animate-pulse transition-colors duration-300"
+  />
+
+  <h1 className="text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
+    CYBERSECURITY ESCAPE ROOM
+  </h1>  
+
+  <p className="text-lg text-gray-100 animate-fadeAndZoom text-center mb-0">
+  Dive into engaging challenges that will sharpen your cybersecurity skills and prepare you for real-world situations.
+</p>
+
+
+  <a href="https://cyber-escape-room.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
+    <div className="card bg-black w-full h-full mt-20 shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105">
+      <figure className="w-full h-full">
+        <img
+          src="/images/cyberGame.jpg"
+          className="rounded-xl w-full h-full"
+        />
+      </figure>
+      <div className="card-body items-center text-center">
+        <p className='font-extrabold text-white'>Play Now</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
     <div className="flex flex-col items-center justify-center h-full mt-40">
       {/* Icon */}
         <FaRoad size={100} className="text-blue-100 hover:text-yellow-400 transition-colors duration-30" />
@@ -161,8 +193,9 @@ const Cybersecurity = () => {
       </div>
     </div>
   </div>
-</div>
-    
+  <p className='mt-10 mb-10 font-bold text-white'>TECHDIVE @ LLC</p>
+  </div>
+
   );
 };
 

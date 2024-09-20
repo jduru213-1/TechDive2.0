@@ -6,7 +6,6 @@
   align-items: center; /* Centers items horizontally */
   padding: 4rem; /* Adds padding around the container */
   width: 100%; /* Sets full width of the viewport */
-
   height: 100vh; /* Sets full height of the viewport */
 }
 
