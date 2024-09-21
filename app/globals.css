@@ -53,3 +53,54 @@ body {
 .pulse-icon {
   animation: pulseIcon 2s infinite;
 }
+
+/* Keyframes for the fancyAnimation */
+@keyframes fancyAnimation {
+  0% {
+    opacity: 0; /* Starts invisible */
+    transform: translateY(50px) scale(0.8) rotate(5deg); /* Starts slightly moved, scaled down, and rotated */
+    color: rgb(255, 255, 255); /* Sets the text color to white */
+  }
+  50% {
+    opacity: 0.5; /* Halfway visible */
+    transform: translateY(-10px) scale(1.05) rotate(-2deg); /* Moves slightly up, scales up, and rotates */
+    color: rgb(200, 200, 255); /* Changes text color */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0) scale(1) rotate(0deg); /* Moves to original position, scales to original size, and no rotation */
+    color: rgb(255, 255, 255); /* Sets the text color back to white */
+  }
+}
+
+/* Keyframes for the sleekFloat animation */
+@keyframes sleekFloat {
+  0% {
+    transform: translateY(0) scale(1); /* Starts at original position and size */
+    background-position: 0% 50%; /* Background position at the start */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Adds initial box-shadow */
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02); /* Moves up slightly and scales up */
+    background-position: 100% 50%; /* Moves background position */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15); /* Increases box-shadow */
+  }
+  100% {
+    transform: translateY(0) scale(1); /* Returns to original position and size */
+    background-position: 0% 50%; /* Resets background position */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Resets box-shadow */
+  }
+}
+
+/* Keyframes for the popup animation */
+@keyframes popup {
+  0% {
+    opacity: 0; /* Starts invisible */
+    transform: scale(0.7); /* Starts scaled down */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Scales to original size */
+    
+  }  
+}

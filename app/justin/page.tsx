@@ -117,11 +117,16 @@ const Justin = () => {
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
 
 <ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical flex-auto">
-  <li className="transition-transform duration-500 hover:scale-105">
+  <li className="transition-transform duration-500">
     <div className="timeline-middle">
-    <FaSchool size={110} className="text-blue-100 hover:text-black transition-colors duration-300" />
-    </div>
-    <div className="timeline-start mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="p-4 rounded-full bg-black transition duration-300 hover:bg-white shadow-lg">
+    <FaSchool
+      size={110} 
+      className="text-white transition-colors duration-300 hover:text-black" 
+    />
+  </div>
+</div>    
+    <div className="mt-16 timeline-start ml-20 mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/fsu.jpg" alt="Frostburg State University" className="w-20 h-20 rounded-full" />
       <p className="font-mono italic text-gray-100 font-bold text-left">August 2023 - Current</p>
       <div className="text-lg font-black text-gray-100 text-left">Frostburg State University</div>
@@ -132,29 +137,41 @@ const Justin = () => {
     <hr />
   </li>
 
-  <li className="transition-transform duration-500 hover:scale-105">
+  <li className="transition-transform duration-500">
     <hr />
     <div className="timeline-middle">
-    <FaSuitcase size={110}className="text-blue-100 hover:text-black transition-colors duration-300" />
-    </div>
-    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="p-4 rounded-full bg-black transition duration-300 hover:bg-white shadow-lg">
+    <FaSuitcase
+      size={110} 
+      className="text-white transition-colors duration-300 hover:text-black" 
+    />
+  </div>
+</div>    
+    <div className="timeline-end mb-10 border-white p-4 transition-opacity duration-500">
       <img src="/images/twc.jpeg" alt="TWC Internship" className="w-20 h-20 rounded-full" />
       <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
       <div className="text-lg font-black text-gray-100">Student Intern - The Washington Center</div>
       <p className="text-base text-gray-100">Researched the cybersecurity field and explored various career paths by reaching out to industry professionals and conducting informational interviews throughout my time in Washington, D.C. Developed skills in effective communication, networking, and teamwork through hands-on experience in a dynamic environment.</p>
-      <div className="flex justify-center mt-3 space-x-4">
+      <div className="flex justify-center mt-3">
        <FaPen size={30} className="text-blue-100" />
       </div>
     </div>
     <hr />
   </li>
 
-  <li className="transition-transform duration-500 hover:scale-105">
+  <li className="transition-transform duration-500 ">
     <hr />
     <div className="timeline-middle">
-    <FaLaptop size={110} className="text-blue-100 hover:text-black transition-colors duration-300"/>
+    <div className="flex items-center justify-center p-4 transition-transform duration-300 hover:scale-105">
+  <div className="p-4 rounded-full bg-black transition duration-300 hover:bg-white shadow-lg">
+    <FaLaptop 
+      size={110} 
+      className="text-white transition-colors duration-300 hover:text-black" 
+    />
+  </div>
+</div>
     </div>
-    <div className="timeline-start mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
+    <div className="timeline-start ml-20 mb-10 border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full" />
       <time className="font-mono italic text-gray-100 font-bold">June - August 2024</time>
       <div className="text-lg font-black text-gray-100">Security Program Manager Intern - Ellington Cyber Academy</div>
@@ -167,11 +184,16 @@ const Justin = () => {
     <hr />
   </li>
 
-  <li className="transition-transform duration-500 hover:scale-105">
+  <li className="transition-transform duration-500">
     <hr />
     <div className="timeline-middle">
-    <FaChalkboardTeacher size={110} className="text-blue-100 hover:text-black transition-colors duration-300" />
-    </div>
+    <div className="p-4 rounded-full bg-black transition duration-300 hover:bg-white shadow-lg">
+    <FaChalkboardTeacher
+      size={110} 
+      className="text-white transition-colors duration-300 hover:text-black" 
+    />
+  </div>
+</div>   
     <div className="timeline-end mb-10 md:text-end border-white p-4 transition-opacity duration-500 hover:opacity-80">
       <img src="/images/eca.png" alt="Ellington Cyber Academy" className="w-20 h-20 rounded-full" />
       <p className="font-mono italic text-gray-100 font-bold text-left">Current - 2024</p>
@@ -199,7 +221,7 @@ const Justin = () => {
     <AiFillMediumSquare size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
   </a>
 </div>
-<p className='mt-10 mb-10 font-bold text-white'>TECHDIVE @ LLC</p>
+<p className='mt-10 mb-10 font-bold text-center text-white'>TechTrek @ LLC</p>
 </div>
   
   );
