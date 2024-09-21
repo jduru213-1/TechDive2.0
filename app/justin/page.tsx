@@ -199,7 +199,7 @@ const Justin = () => {
     <AiFillMediumSquare size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
   </a>
 </div>
-
+<p className='mt-10 mb-10 font-bold text-white'>TECHDIVE @ LLC</p>
 </div>
   
   );

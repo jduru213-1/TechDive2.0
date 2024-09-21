@@ -199,6 +199,7 @@ export default function Home() {
       </div>
     </div>
   </div>
+  <p className='mt-10 mb-10 font-bold text-white text-center'>TECHDIVE @ LLC</p>
 </div>
 
 </main> {/* Closes the main tag */}

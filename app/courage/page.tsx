@@ -74,7 +74,7 @@ const Couragepage = () => {
             <div className="timeline-start mb-10 md:text-end">
             <img src="/images/fsu.jpg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
               <time className="font-mono italic text-base text-gray-100 text-left">August 2020</time>
-              <div className="text-lg font-black text-base text-gray-100 text-left">Frostburg State University</div>
+              <div className=" font-black text-base text-gray-100 text-left">Frostburg State University</div>
               <p className='text-base text-gray-100 text-left'>
               Officially enrolled at Frostburg State Univesity with a major in Computer Science and Minor in Mathemathics 
               </p>
@@ -98,7 +98,7 @@ const Couragepage = () => {
             <div className="timeline-end mb-10">
             <img src="/images/SPARKLabs.jpg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
               <time className="font-mono italic text-base text-gray-100 text-left">January 2023</time>
-              <div className="text-lg font-black text-base text-gray-100 text-left">Frostburg State University</div>
+              <div className=" font-black text-base text-gray-100 text-left">Frostburg State University</div>
               <p className='text-base text-gray-100 text-left'>
               Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
               practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
@@ -123,7 +123,7 @@ const Couragepage = () => {
             <div className="timeline-start mb-10 md:text-end">
             <img src="/images/twc.jpeg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
               <time className="font-mono italic text-base text-gray-100 text-left">May 2024</time>
-              <div className="text-lg font-black text-base text-gray-100 text-left">The Washington Center</div>
+              <div className=" font-black text-base text-gray-100 text-left">The Washington Center</div>
               <p className='text-base text-gray-100 text-left'>
               Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
               practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
@@ -148,7 +148,7 @@ const Couragepage = () => {
             <div className="timeline-end mb-10">
             <img src="/images/twc.jpeg" alt="Frostburg State University" className="w- h-20 rounded-full relative" />
               <time className="font-mono italic text-base text-gray-100 text-left">May 2024</time>
-              <div className="text-lg font-black text-base text-gray-100 text-left">Devlopment monitors</div>
+              <div className=" font-black text-base text-gray-100 text-left">Devlopment monitors</div>
               <p className='text-base text-gray-100 text-left'>
               Officially created the Frostburg State University Spark Inovation Lab for innovative students. A work space for students with creative ideas, and 
               practicle projects for any field such as Artificial intelligence, Augmented Reality, App devlopment, Research work, robotics, and much more!
@@ -181,6 +181,7 @@ const Couragepage = () => {
           </li>
         </ul>
       </div>
+      <p className='mt-10 mb-10 font-bold text-white text-center'>TECHDIVE @ LLC</p>
     </div>
   );
 };

@@ -71,7 +71,7 @@ const Cybersecurity = () => {
 {/* Projects Section */}
 <div className="flex flex-col items-center justify-center h-full mt-20">
   {/* Icon */}
-  <GrResources size={100} className="text-blue-100  hover:text-yellow-400 transition-colors duration-30" />
+  <GrResources size={100} className="text-blue-100 animate-pulse  hover:text-yellow-400 transition-colors duration-30" />
 
   {/* Heading */}
   <h1 className=" text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
@@ -159,7 +159,7 @@ const Cybersecurity = () => {
 </p>
 
 
-  <a href="https://cyber-escape-room.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
+  <a href="https://cyberescaperoom-qsybvrmpf2fdjrlujfpfik.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
     <div className="card bg-black w-full h-full mt-20 shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105">
       <figure className="w-full h-full">
         <img
