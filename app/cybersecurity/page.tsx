@@ -190,7 +190,7 @@ const Cybersecurity = () => {
       </div>
     </div>
   </div>
-  <p className='mt-10 mb-10 font-bold text-white'>TechTrek @ LLC</p>
+  <p className='mt-10 mb-10 font-bold text-white'>TrekInTech @ LLC</p>
   </div>
 
   );

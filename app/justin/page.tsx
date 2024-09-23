@@ -14,11 +14,11 @@ const Justin = () => {
     <div className="mt-16 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
       <img src="/images/justin.jpg" alt="justin" className="w-full h-full" />
     </div>
-    <h1 className="mt-2 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
+    <h1 className="mt-1 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
     <h3 className="flex mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
       SIEM Apprentice Instructor | Security Program Manager
     </h3>
-    <p className="flex  text-xl font-bold text-gray-100 animate-fadeAndZoom">
+    <p className="mt-3 flex text-l font-bold text-gray-100 animate-fadeAndZoom">
       "Every disappointment is a blessing in disguise"
     </p>
 
@@ -39,7 +39,7 @@ const Justin = () => {
     </div>
 
     {/* Profile Description */}
-    <p className="flex mt-20 font-medium text-gray-100 text-center">
+    <p className="flex mt-20 text-xl font-medium text-gray-100 text-center">
   Dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security.
   <br />
   My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements.
@@ -221,7 +221,7 @@ const Justin = () => {
     <AiFillMediumSquare size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
   </a>
 </div>
-<p className='mt-10 mb-10 font-bold text-center text-white'>TechTrek @ LLC</p>
+<p className='mt-10 mb-10 font-bold text-center text-white'>TrekInTech @ LLC</p>
 </div>
   
   );

@@ -169,7 +169,7 @@ export default function Home() {
         
       </div>
     </div>
-    <p className='mt-5 mb-5 font-bold text-white text-center'>TechTrek @ LLC</p>
+    <p className='mt-5 mb-5 font-bold text-white text-center'>TrekInTech @ LLC</p>
   </div>
 
 </main> {/* Closes the main tag */}
