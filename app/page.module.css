@@ -223,7 +223,7 @@
   font-size: 50px; /* Sets the font size */
   text-align: center; /* Centers the text horizontally */
   white-space: nowrap; /* Prevents text from wrapping */
-  margin-top: -1180px; /* Moves the section up */
+  margin-top: -1110px; /* Moves the section up */
   padding: 6.5rem; /* Adds padding inside the section */
   animation: fancyAnimation 1.5s ease-in-out forwards; /* Applies animation */
   position: relative;

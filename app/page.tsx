@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Tech Dive</title>
         <meta name="description" content="Discover the Future of Tech - Unlock New Possibilities" />
       </Head>
@@ -134,26 +135,7 @@ export default function Home() {
       </div>
     </div>
 
-    {/* News Outlets Card */}
-    <div className="mx-4">
-      <div className="card bg-black w-80 h-[400px] shadow-xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-        <figure className="px-10 pt-10 h-[250px]">
-          <img
-            src="images/news.jpg"
-            alt="News Outlets"
-            className="rounded-xl object-cover w-full h-full"
-          />
-        </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title text-white">News Outlets</h2>
-          <div className="card-actions">
-            <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-              Explore
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
 
@@ -199,7 +181,7 @@ export default function Home() {
       </div>
     </div>
   </div>
-  <p className='mt-10 mb-10 font-bold text-white text-center'>TECHDIVE @ LLC</p>
+  <p className='mt-10 mb-10 font-bold text-white text-center'>TechTrek @ LLC</p>
 </div>
 
 </main> {/* Closes the main tag */}

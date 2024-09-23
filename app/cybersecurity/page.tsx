@@ -49,12 +49,18 @@ const Cybersecurity = () => {
         </h1>
       </div>
 
-      <p className="mt-1 text-gray-100 animate-fadeAndZoom">
-        To be secure, you must be vigilant. To be vigilant, you must be aware
-      </p>
-      <p className="flex mt-20 text-xl text-gray-300 text-center ">
-        Welcome to the Cybersecurity Hub! Here, you will find everything you need to sharpen your skills and stay ahead in digital security. From our weekly cybersecurity tips and interactive Spot the Phish game to the Password Strength Tester and the Cybersecurity Professional Quiz, we offer practical tools and engaging challenges to help you master the essentials of online safety.
-      </p>
+      <p className="mt-3 text-gray-100  animate-fadeAndZoom">
+</p>
+
+
+<p className="mt-20 text-gray-300 text-xl text-center">
+  Welcome to the Cybersecuity Platform! <br/>
+  Explore a wealth of resources designed to enhance your cybersecurity knowledge and skills. 
+  <br/> From practical tips to engaging quizzes and interactive tools, you'll find everything you need 
+  to stay safe in the digital world.  <br/>Let’s embark on this journey to strengthen your online 
+  security together!
+</p>
+
 
       <div className="flex flex-col items-center mt-20">
         <GiBrain
@@ -193,7 +199,7 @@ const Cybersecurity = () => {
       </div>
     </div>
   </div>
-  <p className='mt-10 mb-10 font-bold text-white'>TECHDIVE @ LLC</p>
+  <p className='mt-10 mb-10 font-bold text-white'>TechTrek @ LLC</p>
   </div>
 
   );

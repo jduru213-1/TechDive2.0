@@ -6,14 +6,14 @@ const Couragepage = () => {
     <div>
       {/* Profile Section */}
       <div className="flex flex-col justify-center items-center h-screen -mt-40">
-        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
+        <div className="mt-40 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
           <img 
             src="/images/Courage2.jpg" 
             alt="courage" 
             className="w-full h-full"
           />
         </div>
-        <h1 className="mt-2 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Courage Tikum</h1>
+        <h1 className="mt-2 text-4xl font-bold text-gray-100 animate-fadeAndZoom">Courage Tikum</h1>
         <p className="mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">Programmer</p>
         
         <div className="flex space-x-4 mt-4">

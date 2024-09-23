@@ -11,7 +11,7 @@ const Justin = () => {
     <div>
   {/* Profile Section */}
   <div className="flex flex-col justify-center items-center h-screen -mt-4">
-    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
+    <div className="mt-16 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
       <img src="/images/justin.jpg" alt="justin" className="w-full h-full" />
     </div>
     <h1 className="mt-2 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
@@ -39,12 +39,12 @@ const Justin = () => {
     </div>
 
     {/* Profile Description */}
-    <p className="flex mt-20 text-xl text-gray-100 text-center animate ">
-      Dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security. 
-      My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements. I am committed to using my 
-      knowledge to solve real-world problems and actively seeking opportunities for academic and professional development. Furthermore, as president 
-      of the African Student Association, I use my position to foster a diverse and inclusive community on campus.
-    </p>
+    <p className="flex mt-20 font-medium text-gray-100 text-center">
+  Dedicated cybersecurity student at Frostburg State University, I am deeply passionate about the ever-changing field of technology and security.
+  <br />
+  My enthusiasm drives me to seek out new learning opportunities and keep up with the latest industry advancements.
+</p>
+
   </div>
 
   {/* Projects Section */}

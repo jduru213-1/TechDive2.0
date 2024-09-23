@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Ensure your custom CSS is included
-import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tech Dive",
+  title: "TechTrek",
   description: "C and JD",
 };
 
@@ -32,7 +31,7 @@ export default function RootLayout({
                   className="transition-transform duration-300 ease-in-out" // Removed hover effect
                 />
               </a>
-              <div className="ml-4 text-2xl font-extrabold text-white transition-transform transform hover:scale-105">
+              <div className="ml-4 text-4xl font-extrabold text-white transition-transform transform hover:scale-105">
                 TechTrek
               </div>
             </div>
@@ -52,16 +51,11 @@ export default function RootLayout({
                 About
               </a>
             </nav>
+            </div>
 
-            {/* Mobile Menu Button */}
-            <button className="md:hidden text-white">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-
+            
           {/* Mobile Navigation Menu */}
+          <button className="md:hidden text-white">
           <nav className="md:hidden mt-2 space-y-2">
             <a href="/#" className="block text-lg font-extrabold text-white transition-transform transform hover:scale-105">
               Home
@@ -76,6 +70,8 @@ export default function RootLayout({
               About
             </a>
           </nav>
+          </button>
+
         </header>
 
         <main className="pt-20 relative">

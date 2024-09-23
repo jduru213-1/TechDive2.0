@@ -2,21 +2,21 @@ import { useState } from 'react';
 
 const Quiz = () => {
   const questions = [
-    { question: 'Would you enjoy analyzing data and logs to find potential security threats?', scoreKey: 'analyze' },
-    { question: 'Would you like breaking into systems to find vulnerabilities?', scoreKey: 'break' },
-    { question: 'Would you prefer following procedures and ensuring compliance?', scoreKey: 'follow' },
-    { question: 'Would you be interested in designing and implementing security solutions?', scoreKey: 'design' },
-    { question: 'Would you enjoy troubleshooting and resolving technical issues?', scoreKey: 'troubleshoot' },
-    { question: 'Would you be excited by the idea of creating and managing security policies?', scoreKey: 'manage' },
-    { question: 'Would you like conducting security audits and assessments?', scoreKey: 'audit' },
-    { question: 'Would you prefer working with large data sets and performing detailed analysis?', scoreKey: 'data' },
-    { question: 'Would you be interested in researching new and emerging cybersecurity threats?', scoreKey: 'research' },
-    { question: 'Would you enjoy collaborating with teams to improve security posture?', scoreKey: 'collaborate' },
-    { question: 'Would you be fascinated by reverse engineering and dissecting malware?', scoreKey: 'reverseengineer' },
-    { question: 'Would you prefer roles that involve frequent communication with stakeholders?', scoreKey: 'communication' },
-    { question: 'Would you be interested in automating security processes and workflows?', scoreKey: 'automation' },
-    { question: 'Would you enjoy managing security operations and incident response?', scoreKey: 'operations' },
-    { question: 'Would you be enthusiastic about compliance with industry standards and regulations?', scoreKey: 'compliance' },
+    { question: 'Would you enjoy analyzing data and logs to find potential security threats?', scoreKey: 'analyze', weight: 2 },
+    { question: 'Would you like breaking into systems to find vulnerabilities?', scoreKey: 'break', weight: 3 },
+    { question: 'Would you prefer following procedures and ensuring compliance?', scoreKey: 'follow', weight: 1 },
+    { question: 'Would you be interested in designing and implementing security solutions?', scoreKey: 'design', weight: 3 },
+    { question: 'Would you enjoy troubleshooting and resolving technical issues?', scoreKey: 'troubleshoot', weight: 2 },
+    { question: 'Would you be excited by the idea of creating and managing security policies?', scoreKey: 'manage', weight: 2 },
+    { question: 'Would you like conducting security audits and assessments?', scoreKey: 'audit', weight: 1 },
+    { question: 'Would you prefer working with large data sets and performing detailed analysis?', scoreKey: 'data', weight: 2 },
+    { question: 'Would you be interested in researching new and emerging cybersecurity threats?', scoreKey: 'research', weight: 3 },
+    { question: 'Would you enjoy collaborating with teams to improve security posture?', scoreKey: 'collaborate', weight: 2 },
+    { question: 'Would you be fascinated by reverse engineering and dissecting malware?', scoreKey: 'reverseengineer', weight: 3 },
+    { question: 'Would you prefer roles that involve frequent communication with stakeholders?', scoreKey: 'communication', weight: 1 },
+    { question: 'Would you be interested in automating security processes and workflows?', scoreKey: 'automation', weight: 2 },
+    { question: 'Would you enjoy managing security operations and incident response?', scoreKey: 'operations', weight: 3 },
+    { question: 'Would you be enthusiastic about compliance with industry standards and regulations?', scoreKey: 'compliance', weight: 1 },
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -27,28 +27,35 @@ const Quiz = () => {
   });
   const [result, setResult] = useState(null);
   const [quizStarted, setQuizStarted] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   const handleAnswer = (answer) => {
     const currentQuestion = questions[currentQuestionIndex];
     const updatedScores = { ...scores };
 
     if (answer === 'yes') {
-      updatedScores[currentQuestion.scoreKey]++;
+      updatedScores[currentQuestion.scoreKey] += currentQuestion.weight;
+    } else if (answer === 'neutral') {
+      updatedScores[currentQuestion.scoreKey] += currentQuestion.weight * 0.5; // Neutral answer gets partial points
     }
 
     setScores(updatedScores);
 
+    const newProgress = ((currentQuestionIndex + 1) / questions.length) * 100;
+    setProgress(newProgress);
+
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      const career = getCareerRecommendation(updatedScores);
+      const career = getCareerRecommendations(updatedScores);
       setResult(career);
     }
   };
 
-  const getCareerRecommendation = (finalScores) => {
-    const maxScore = Math.max(...Object.values(finalScores));
-    const topScores = Object.keys(finalScores).filter(key => finalScores[key] === maxScore);
+  const getCareerRecommendations = (finalScores) => {
+    const sortedScores = Object.entries(finalScores)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3); // Get top 3 scores
 
     const careerMap = {
       analyze: 'Security Analyst',
@@ -68,7 +75,7 @@ const Quiz = () => {
       compliance: 'Compliance Specialist'
     };
 
-    return careerMap[topScores[0]] || 'Cybersecurity Generalist';
+    return sortedScores.map(([key]) => careerMap[key] || 'Cybersecurity Generalist').join(', ');
   };
 
   const resetQuiz = () => {
@@ -79,6 +86,7 @@ const Quiz = () => {
       reverseengineer: 0, communication: 0, automation: 0, operations: 0, compliance: 0
     });
     setResult(null);
+    setProgress(0);
     setQuizStarted(false);
   };
 
@@ -95,16 +103,17 @@ const Quiz = () => {
         </div>
       ) : result ? (
         <div>
-          <h2 style={{ color: 'white' }}>Your Recommended Career:</h2>
+          <h2 style={{ color: 'white' }}>Your Recommended Careers:</h2>
           <p style={{ color: 'white' }}>{result}</p>
           <button
             onClick={resetQuiz}
-            className="text-black rounded-full mt-5 px-6 py-2 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg">       
-                 Retake Quiz
+            className="text-black rounded-full mt-5 px-6 py-2 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg">
+            Retake Quiz
           </button>
         </div>
       ) : (
         <div>
+          <p style={{ color: 'white' }}>{`Question ${currentQuestionIndex + 1} of ${questions.length}`}</p>
           <p style={{ color: 'white' }}>{questions[currentQuestionIndex].question}</p>
           <div style={{ marginTop: '10px' }}>
             <button
@@ -114,12 +123,19 @@ const Quiz = () => {
               Yes
             </button>
             <button
+              onClick={() => handleAnswer('neutral')}
+              className="text-black rounded-full px-6 py-4 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg"
+            >
+              Neutral
+            </button>
+            <button
               onClick={() => handleAnswer('no')}
               className="text-black rounded-full px-6 py-4 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg"
             >
               No
             </button>
           </div>
+          <p style={{ color: 'white', marginTop: '10px' }}>Progress: {Math.round(progress)}%</p>
         </div>
       )}
     </div>
