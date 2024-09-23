@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Fixed Navigation */}
         <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-black to-black p-4 shadow-lg z-50">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="max-w-9xl mx-auto flex items-center justify-between">
             {/* Logo Section */}
             <div className="flex items-center">
               <a href="/#">
