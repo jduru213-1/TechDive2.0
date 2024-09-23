@@ -18,7 +18,7 @@ const Justin = () => {
     <h3 className="flex mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
       SIEM Apprentice Instructor | Security Program Manager
     </h3>
-    <p className="flex mt-2 text-xl font-bold text-gray-100 animate-fadeAndZoom">
+    <p className="flex  text-xl font-bold text-gray-100 animate-fadeAndZoom">
       "Every disappointment is a blessing in disguise"
     </p>
 

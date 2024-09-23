@@ -7,20 +7,11 @@ export default function Home() {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Tech Dive</title>
+        <title>TreckInTech</title>
         <meta name="description" content="Discover the Future of Tech - Unlock New Possibilities" />
       </Head>
 
       <main className={styles.main}>
-
-        {/* Background Video */}
-        <video
-          src="/background.mp4"
-          autoPlay
-          muted
-          loop
-          className={styles.video}
-        />
 
         {/* Main Content */}
         <div className={styles.contents} >
@@ -142,10 +133,8 @@ export default function Home() {
 
 <div id="about-section" className="relative mb-11">
   {/* Main heading for the section */}
-  <h1 className="text-6xl font-bold text-center text-white mt-40">Purpose</h1>
+  <h1 className="text-6xl font-bold text-center text-white mt-20">Purpose</h1>
   
-  {/* Container to center the card and add bottom margin */}
-  <div className="flex justify-center mb-32">
     
     {/* Card with scaling, hover effects, and styling */}
     <div className="scale-95 card card-side bg-black shadow-xl w-full max-w-4xl border border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 rounded-lg overflow-hidden">
@@ -155,7 +144,7 @@ export default function Home() {
         <img
           src="images/mission.jpg"  
           alt="Mission"
-          className="w-full h-full object-cover rounded-l-lg"
+          className="w-full h-full"
         />
       </figure>
       
@@ -180,9 +169,8 @@ export default function Home() {
         
       </div>
     </div>
+    <p className='mt-5 mb-5 font-bold text-white text-center'>TechTrek @ LLC</p>
   </div>
-  <p className='mt-10 mb-10 font-bold text-white text-center'>TechTrek @ LLC</p>
-</div>
 
 </main> {/* Closes the main tag */}
 </>

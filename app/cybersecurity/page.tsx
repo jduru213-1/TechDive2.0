@@ -49,17 +49,14 @@ const Cybersecurity = () => {
         </h1>
       </div>
 
-      <p className="mt-3 text-gray-100  animate-fadeAndZoom">
-</p>
-
-
-<p className="mt-20 text-gray-300 text-xl text-center">
-  Welcome to the Cybersecuity Platform! <br/>
-  Explore a wealth of resources designed to enhance your cybersecurity knowledge and skills. 
-  <br/> From practical tips to engaging quizzes and interactive tools, you'll find everything you need 
-  to stay safe in the digital world.  <br/>Let’s embark on this journey to strengthen your online 
-  security together!
-</p>
+    <p className="mt-3 text-gray-100  animate-fadeAndZoom"></p>
+      <p className="mt-20 text-gray-300 font-medium text-balance text-xl text-center">
+        Welcome to the Cybersecuity Platform! <br/>
+         Explore a wealth of resources designed to enhance your cybersecurity knowledge and skills. 
+        <br/> From practical tips to engaging quizzes and interactive tools, you'll find everything you need 
+      <br/>to stay safe in the digital world. Let’s embark on this journey to strengthen your online 
+      Security together!
+    </p>
 
 
       <div className="flex flex-col items-center mt-20">
@@ -78,16 +75,10 @@ const Cybersecurity = () => {
 <div className="flex flex-col items-center justify-center h-full mt-20">
   {/* Icon */}
   <GrResources size={100} className="text-blue-100 animate-pulse  hover:text-yellow-400 transition-colors duration-30" />
-
   {/* Heading */}
-  <h1 className=" text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
-    BUILD A LAB ENVIRONMENT
-  </h1>
-
+  <h1 className=" text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">BUILD A LAB ENVIRONMENT</h1>
   {/* Paragraph */}
-  <p className="flex flex-col mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">
-    Set up a controlled environment to test and experiment with SIEM tools and techniques safely and effectively
-  </p>
+  <p className="flex flex-col mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">Set up a controlled environment to test and experiment with SIEM tools and techniques safely and effectively</p>
 
   {/* Cards Section */}
   <div className="flex justify-around items-center mt-10 flex-wrap">
