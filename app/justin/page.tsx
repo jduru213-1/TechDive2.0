@@ -18,7 +18,7 @@ const Justin = () => {
     <h3 className="flex mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
       SIEM Apprentice Instructor | Security Program Manager
     </h3>
-    <p className="mt-3 flex text-l font-bold text-gray-100 animate-fadeAndZoom">
+    <p className="mt-0 flex text-xl font-bold text-gray-100 animate-fadeAndZoom">
       "Every disappointment is a blessing in disguise"
     </p>
 
@@ -48,70 +48,72 @@ const Justin = () => {
   </div>
 
   {/* Projects Section */}
-  <h1 className="mt-20 text-6xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
-  <p className="mt-2 text-gray-100 animate-fadeAndZoom text-center">
-    A display of my most recent works, projects, and developments.
-  </p>
+<h1 className="mt-20 text-6xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
+<p className="mt-2 text-gray-100 animate-fadeAndZoom text-center">
+  A display of my most recent works, projects, and developments.
+</p>
 
-  <div className="flex justify-around items-center mt-6">
-    {/* Project 1 */}
-    <div className="mx-4">
-      <div className="card bg-black w-80 h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-        <div className="card-body flex flex-col items-center justify-center text-center h-full">
+<div className="flex flex-wrap justify-center items-center mt-6">
+  {/* Project 1 */}
+  <div className="m-4 max-w-xs">
+    <div className="card bg-black h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+      <div className="card-body flex flex-col items-center justify-center text-center h-full">
         <FaWindows size={60} className="text-blue-100" />
-          <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
-          <p className="mt-2 text-gray-100">
-            Learn how Active Directory (AD) manages user accounts and policies, and how detection monitoring enhances security by tracking suspicious activities.
-          </p>
-          <div className="card-actions animate-fadeIn mt-4">
-            <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
-              <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                Explore
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Project 2 */}
-    <div className="mx-4">
-      <div className="card bg-black w-80 h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-        <div className="card-body flex flex-col items-center justify-center text-center h-full">
-        <SiAwssecretsmanager size={70} className="text-blue-100" />
-          <h1 className="card-title text-white">Vulnerability Management</h1>
-          <p className="mt-2 text-gray-100 animate-fadeAndZoom">
-            Learn how vulnerability management identifies security weaknesses and how the NIST framework guides effective practices to enhance your cybersecurity.
-          </p>
-          <div className="card-actions mt-4">
-            <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
-              <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                Explore
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Project 3 */}
-    <div className="mx-4">
-      <div className="card bg-black w-80 h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-        <div className="card-body flex flex-col items-center justify-center text-center h-full">
-        <TbSettingsAutomation size={70} className="text-blue-100" />
-          <h3 className="card-title text-white">Automated Threat Detection and Incident Response</h3>
-          <p className="mt-2 text-gray-100 animate-fadeAndZoom">
-            Discover how automated threat detection identifies security risks in real-time, while incident response quickly addresses and mitigates threats.
-          </p>
-          <div className="card-actions mt-4">
+        <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
+        <p className="mt-2 text-gray-100">
+          Learn how Active Directory (AD) manages user accounts and policies, and how detection monitoring enhances security by tracking suspicious activities.
+        </p>
+        <div className="card-actions animate-fadeIn mt-4">
+          <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
             <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
               Explore
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
   </div>
+
+  {/* Project 2 */}
+  <div className="m-4 max-w-xs">
+    <div className="card bg-black h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+      <div className="card-body flex flex-col items-center justify-center text-center h-full">
+        <SiAwssecretsmanager size={70} className="text-blue-100" />
+        <h1 className="card-title text-white">Vulnerability Management</h1>
+        <p className="mt-2 text-gray-100 animate-fadeAndZoom">
+          Learn how vulnerability management identifies security weaknesses and how the NIST framework guides effective practices to enhance your cybersecurity.
+        </p>
+        <div className="card-actions mt-4">
+          <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
+            <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+              Explore
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Project 3 */}
+  <div className="m-4 max-w-xs">
+    <div className="card bg-black h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+      <div className="card-body flex flex-col items-center justify-center text-center h-full">
+        <TbSettingsAutomation size={70} className="text-blue-100" />
+        <h3 className="card-title text-white">Automated Threat Detection and Incident Response</h3>
+        <p className="mt-2 text-gray-100 animate-fadeAndZoom">
+          Discover how automated threat detection identifies security risks in real-time, while incident response quickly addresses and mitigates threats.
+        </p>
+        <div className="card-actions mt-4">
+          <Link href="https://your-link-here">
+            <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+              Explore
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <h1 className="mt-40 mb-2 text-6xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
