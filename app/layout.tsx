@@ -38,13 +38,11 @@ export default function RootLayout({
               </div>
             </div>
 
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
                <Link href="/" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
                 Home
               </Link>
-              <Link href="/#motive-section" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
-                Story
+              <Link href="/#motive-section" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">Story
               </Link>
               <Link href="/#resources-section" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
                 Resources
