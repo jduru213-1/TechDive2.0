@@ -40,7 +40,7 @@ export default function RootLayout({
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
+               <Link href="/" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
                 Home
               </Link>
               <Link href="/#motive-section" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">

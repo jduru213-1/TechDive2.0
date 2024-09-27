@@ -17,13 +17,13 @@
 }
 
 html {
-  scroll-behavior: auto;
-  
+  scroll-behavior: smooth; /* Smooth scrolling for modern browsers */
+  overscroll-behavior: contain; /* Prevents over-scrolling on supported touch devices */
 }
 
-
 body {
-  /* You can set a global font or background here */
+  scroll-behavior: smooth; /* Smooth scrolling for body content */
+  overscroll-behavior: none; /* Disables overscroll effects */
 }
 
 /* Fade In Up Animation */
