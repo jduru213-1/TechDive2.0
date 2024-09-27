@@ -1,26 +1,53 @@
-import React from 'react';
-import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare, } from 'react-icons/ai';
+"use client";  // This line should be at the very top
+
+import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare } from 'react-icons/ai';
 import Link from 'next/link';
-import { FaSchool,FaSuitcase, FaLaptop,FaChalkboardTeacher,FaConfluence, FaWindows, FaPen} from "react-icons/fa";
+import { FaSchool, FaSuitcase, FaLaptop, FaChalkboardTeacher, FaConfluence, FaWindows, FaPen } from "react-icons/fa";
 import { SiJira, SiSplunk, SiAwssecretsmanager } from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
+import React, { useEffect, useState } from 'react';
+import Loading from '../components/loading';
 
 
 const Justin = () => {
+    const [isLoading, setIsLoading] = useState(true);
+  
+    // Simulate loading delay (e.g., 2 seconds)
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsLoading(false);  // Stop loading after 2 seconds
+      }, 2000);
+  
+      // Cleanup timer
+      return () => clearTimeout(timer);
+    }, []);
+  
+    // Scroll to the top when loading is complete
+    useEffect(() => {
+      if (!isLoading) {
+        window.scrollTo(0, 0);  // Scroll to the top of the page
+      }
+    }, [isLoading]); // Run this effect when isLoading changes
+  
+    // Render the loading component if still loading
+    if (isLoading) {
+      return <Loading />;
+    }
+ 
   return (
     <div>
-  {/* Profile Section */}
-  <div className="flex flex-col justify-center items-center h-screen -mt-4">
-    <div className="mt-16 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
-      <img src="/images/justin.jpg" alt="justin" className="w-full h-full" />
-    </div>
-    <h1 className="mt-1 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
-    <h3 className="flex mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
-      SIEM Apprentice Instructor | Security Program Manager
-    </h3>
-    <p className="mt-0 flex text-xl font-bold text-gray-100 animate-fadeAndZoom">
-      "Every disappointment is a blessing in disguise"
-    </p>
+      {/* Profile Section */}
+      <div className="flex flex-col justify-center items-center h-screen -mt-4">
+        <div className="mt-16 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
+          <img src="/images/justin.jpg" alt="Justin" className="w-full h-full" />
+        </div>
+        <h1 className="mt-1 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
+        <h3 className="mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
+          SIEM Apprentice Instructor | Security Program Manager
+        </h3>
+        <p className="mt-0 text-xl font-bold text-gray-100 animate-fadeAndZoom">
+          "Every disappointment is a blessing in disguise"
+        </p>
 
     {/* Social Links */}
     <div className="flex space-x-4 mt-4">

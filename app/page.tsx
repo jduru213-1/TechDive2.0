@@ -1,21 +1,51 @@
-import Link from "next/link"; 
-import Head from "next/head";
+"use client"; // Add this line at the top
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <title>TreckInTech</title>
-        <meta
-          name="description"
-          content="Discover the Future of Tech - Unlock New Possibilities"
-        />
-      </Head>
+import React, { useEffect, useState } from 'react';
+import Loading from './components/loading';
+import Head from 'next/head';
+import Link from 'next/link';
+
+export default function Page() {
+
+  // This component manages a loading state and simulates a loading delay before displaying the main content.//
+
+  const [isLoading, setIsLoading] = useState(true); // 
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  
+    return () => clearTimeout(timer); 
+  }, []); 
+  
+  useEffect(() => {
+    if (!isLoading) {
+      window.scrollTo(0, 0); 
+    }
+  }, [isLoading]); 
+  
+  if (isLoading) {
+    return <Loading />; 
+  }
+  
+
+  // Head section for page metadata and favicon
+return (
+  <>
+    <Head>
+      <link rel="icon" href="/favicon.ico" />
+      <title>TreckInTech</title>
+      <meta
+        name="description"
+        content="Discover the Future of Tech - Unlock New Possibilities"
+      />
+    </Head>
+
 
       {/* Web Intro */}
       <div className="flex flex-col items-center mt-40 space-y-6 px-4 py-10">
-        <h1 className="text-white font-bold sm:px-16 md:px-24 text-3xl sm:text-4xl md:text-5xl text-center leading-tight animate-fancyAnimation">
+        <h1 className="text-white font-bold sm:px-16 md:px-24 text-3xl sm:text-4xl md:text-5xl text-center leading-tight animate-fadeAndZoom">
           Discover the Future of Tech
           <br />
           Unlock New Possibilities
@@ -33,28 +63,25 @@ export default function Home() {
 
       {/* Buttons for Navigation */}
       <div className="-mt-10 flex justify-center items-center animate-popup space-x-4">
-        <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
-          <a href="#about-section" className="transition-colors duration-300">
+        <Link href="#about-section">
+          <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
             About
-          </a>
-        </button>
-        <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
-          <a href="#motive-section" className="transition-colors duration-300">
+          </button>
+        </Link>
+
+        <Link href="#motive-section">
+          <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
             Story
-          </a>
-        </button>
+          </button>
+        </Link>
       </div>
 
       {/* Motive Section */}
-      <div
-        id="motive-section"
-        className="flex flex-col items-center justify-center text-center space-y-6 mt-12 py-40 px-4" // min-h-screen ensures it takes full height of the viewport
-      >
+      <div id="motive-section" className="flex flex-col items-center justify-center text-center space-y-6 mt-12 py-40 px-4">
         <h1 className="mt-12 text-white text-6xl font-bold">The Motive</h1>
 
         {/* Profile Sections */}
         <div className='flex justify-center space-x-4'>
-          {/* Justin's Profile Section */}
           <Link href='/justin'>
             <div className="mt-5 relative flex flex-col items-center mx-4 group">
               <img
@@ -68,7 +95,6 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* Courage's Profile Section */}
           <Link href='/courage'>
             <div className="mt-5 relative flex flex-col items-center mx-4 group">
               <img
@@ -91,74 +117,68 @@ export default function Home() {
       </div>
 
       {/* Resources Section */}
-<section
-  id="resources-section"
-  className="relative text-white font-bold text-center mt-1 py-40 animate-fancyAnimation transition-all duration-500"
->
-  {/* Heading */}
-  <h1 className="mt-1 text-5xl animate-fadeInDown delay-300">Resources</h1>
-
-  {/* Small paragraph under the Resources heading */}
-  <p className="text-lg font-normal max-w-2xl mx-auto mt-1 text-gray-100 animate-fadeInUp delay-600 px-4">
-    Explore a collection of tools and materials to enhance your skills in programming and cybersecurity.
-  </p>
-
-  {/* Cards Container */}
-  <div className="mt-5 flex flex-wrap justify-center items-center gap-8 px-4">
-    {/* Programming Card */}
-    <div className="relative group w-80">
-      <div className="card bg-black w-full h-[400px] shadow-2xl border border-transparent transition-all duration-700 hover:scale-110 hover:shadow-xl transform perspective-1000">
-        <figure className="px-10 pt-10 h-[250px]">
-          <img
-            src="images/programming.jpg"
-            alt="Programming"
-            className="rounded-xl object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-          />
-        </figure>
-        <Link href="/programming">
-          <div className="card-body flex flex-col justify-center items-center text-center transition-transform duration-300 transform group-hover:translate-y-2">
-            <h2 className="text-2xl text-white mb-4 transition-colors duration-300 group-hover:text-white">
-              Programming
-            </h2>
-            <div className="card-actions">
-              <button className="btn bg-white text-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-105">
-                Explore
-              </button>
+      <section
+        id="resources-section"
+        className="relative text-white font-bold text-center mt-1 py-40 animate-fancyAnimation transition-all duration-500"
+      >
+        <h1 className="mt-1 text-5xl animate-fadeInDown delay-300">Resources</h1>
+        <p className="text-lg font-normal max-w-2xl mx-auto mt-1 text-gray-100 animate-fadeInUp delay-600 px-4">
+          Explore a collection of tools and materials to enhance your skills in programming and cybersecurity.
+        </p>
+        <div className="mt-5 flex flex-wrap justify-center items-center gap-8 px-4">
+          {/* Programming Card */}
+          <div className="relative group w-80">
+            <div className="card bg-black w-full h-[400px] shadow-2xl border border-transparent transition-all duration-700 hover:scale-110 hover:shadow-xl transform perspective-1000">
+              <figure className="px-10 pt-10 h-[250px]">
+                <img
+                  src="images/programming.jpg"
+                  alt="Programming"
+                  className="rounded-xl object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+              </figure>
+              <Link href="/programming">
+                <div className="card-body flex flex-col justify-center items-center text-center transition-transform duration-300 transform group-hover:translate-y-2">
+                  <h2 className="text-2xl text-white mb-4 transition-colors duration-300 group-hover:text-white">
+                    Programming
+                  </h2>
+                  <div className="card-actions">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-105">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
-        </Link>
-      </div>
-    </div>
 
-    {/* Cybersecurity Card */}
-    <div className="relative group w-80">
-      <div className="card bg-black w-full h-[400px] shadow-2xl border border-transparent transition-all duration-700 hover:scale-110 hover:shadow-xl transform perspective-1000">
-        <figure className="px-10 pt-10 h-[250px]">
-          <img
-            src="images/cyber.jpg"
-            alt="Cybersecurity"
-            className="rounded-xl object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-          />
-        </figure>
-        <Link href="/cybersecurity">
-          <div className="card-body flex flex-col justify-center items-center text-center transition-transform duration-300 transform group-hover:translate-y-2">
-            <h2 className="text-2xl text-white mb-4 transition-colors duration-300 group-hover:text-white">
-              Cybersecurity
-            </h2>
-            <div className="card-actions">
-              <button className="btn bg-white text-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-105">
-                Explore
-              </button>
+          {/* Cybersecurity Card */}
+          <div className="relative group w-80">
+            <div className="card bg-black w-full h-[400px] shadow-2xl border border-transparent transition-all duration-700 hover:scale-110 hover:shadow-xl transform perspective-1000">
+              <figure className="px-10 pt-10 h-[250px]">
+                <img
+                  src="images/cyber.jpg"
+                  alt="Cybersecurity"
+                  className="rounded-xl object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
+              </figure>
+              <Link href="/cybersecurity">
+                <div className="card-body flex flex-col justify-center items-center text-center transition-transform duration-300 transform group-hover:translate-y-2">
+                  <h2 className="text-2xl text-white mb-4 transition-colors duration-300 group-hover:text-white">
+                    Cybersecurity
+                  </h2>
+                  <div className="card-actions">
+                    <button className="btn bg-white text-black hover:bg-black hover:text-white transition-all duration-300 transform hover:scale-105">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
-
-      <div id="about-section" className="py-20 relative mb-11 px-4">
+     <div id="about-section" className="py-20 relative mb-11 px-4">
         {/* Main heading for the section */}
         <h1 className="text-5xl font-extrabold text-center text-white mt-20">Purpose</h1>
         
@@ -209,6 +229,6 @@ export default function Home() {
       <footer className="flex justify-center items-center text-white py-4 text-sm">
         <p>&copy; 2024 TrekInTech</p>
       </footer>
-    </>
-  );
+      </>
+  )
 }

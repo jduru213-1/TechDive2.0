@@ -9,9 +9,11 @@ import { SiJira, SiSplunk, SiAwssecretsmanager,SiNintendogamecube  } from "react
 import { TbSettingsAutomation } from "react-icons/tb";
 import { GrAid, GrResources } from "react-icons/gr";
 import Quiz from '../components/cyberQuiz';
+import Loading from '../components/loading';
 
 
 const Cybersecurity = () => {
+  
   const [weeklyTip, setWeeklyTip] = useState('Loading weekly tip...');
 
   const fetchWeeklyTip = async () => {
@@ -36,6 +38,30 @@ const Cybersecurity = () => {
 
     return () => clearInterval(intervalId); // Clean up on unmount
   }, []);
+
+    const [isLoading, setIsLoading] = useState(true);
+  
+    // Simulate loading delay (e.g., 2 seconds)
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsLoading(false);  // Stop loading after 2 seconds
+      }, 2000);
+  
+      // Cleanup timer
+      return () => clearTimeout(timer);
+    }, []);
+  
+    // Scroll to the top when loading is complete
+    useEffect(() => {
+      if (!isLoading) {
+        window.scrollTo(0, 0);  // Scroll to the top of the page
+      }
+    }, [isLoading]); // Run this effect when isLoading changes
+  
+    // Render the loading component if still loading
+    if (isLoading) {
+      return <Loading />;
+    }
 
   return (
     <div className="text-center flex-col">

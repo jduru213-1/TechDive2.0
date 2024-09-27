@@ -1,7 +1,35 @@
-import React from 'react';
-import { AiFillLinkedin, AiFillMail, AiFillFileText } from 'react-icons/ai';
+"use client";  // This line should be at the very top
+
+import { AiFillLinkedin, AiFillMail, AiFillFileText, AiFillMediumSquare } from 'react-icons/ai';
+
+import React, { useEffect, useState } from 'react';
+import Loading from '../components/loading';
 
 const Couragepage = () => {
+    const [isLoading, setIsLoading] = useState(true);
+  
+    // Simulate loading delay (e.g., 2 seconds)
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsLoading(false);  // Stop loading after 2 seconds
+      }, 2000);
+  
+      // Cleanup timer
+      return () => clearTimeout(timer);
+    }, []);
+  
+    // Scroll to the top when loading is complete
+    useEffect(() => {
+      if (!isLoading) {
+        window.scrollTo(0, 0);  // Scroll to the top of the page
+      }
+    }, [isLoading]); // Run this effect when isLoading changes
+  
+    // Render the loading component if still loading
+    if (isLoading) {
+      return <Loading />;
+    }
+
   return (
     <div>
       {/* Profile Section */}
