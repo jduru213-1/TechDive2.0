@@ -22,7 +22,7 @@ export default function Page() {
   useEffect(() => {
     if (!isLoading) {
       window.scrollTo(0, 0); 
-    }
+    } 
   }, [isLoading]); 
   
   if (isLoading) {
@@ -35,7 +35,7 @@ return (
   <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
-      <title>TreckInTech</title>
+      <title>TechTrek</title>
       <meta
         name="description"
         content="Discover the Future of Tech - Unlock New Possibilities"

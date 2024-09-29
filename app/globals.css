@@ -16,6 +16,8 @@
   }
 }
 
+
+
 html {
   scroll-behavior: smooth; /* Smooth scrolling for modern browsers */
   overscroll-behavior: contain; /* Prevents over-scrolling on supported touch devices */
@@ -31,6 +33,7 @@ body {
 section {
   scroll-snap-align: start; /* Snaps to the start of each section */
 }
+
 
 
 /* Fade In Up Animation */

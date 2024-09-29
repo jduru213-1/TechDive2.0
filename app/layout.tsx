@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Metadata for the page
 export const metadata: Metadata = {
-  title: "TrekInTech",
+  title: "TechTrek",
   description: "C and JD",
 };
 
@@ -23,20 +23,20 @@ export default function RootLayout({
         <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-black to-black p-4 shadow-lg z-50">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Logo Section */}
-            <div className="flex items-center">
-              <Link href="/">
-                <img
-                  src="/images/TechTrek.jpeg"
-                  width={80}
-                  height={80}
-                  alt="Tech Trek Logo"
-                  className="transition-transform duration-300 ease-in-out" // Logo transition effect
-                />
-              </Link>
-              <div className="ml-4 text-4xl font-extrabold text-white transition-transform transform hover:scale-105">
-                TrekInTech
+            <Link href="/">
+              <div className="flex items-center">
+                  <img
+                    src="/images/TechTrek.jpeg"
+                    width={80}
+                    height={80}
+                    alt="Tech Trek Logo"
+                    className="transition-transform duration-300 ease-in-out" // Logo transition effect
+                  />
+                <div className="ml-4 text-4xl font-extrabold text-white transition-transform transform hover:scale-105">
+                  TechTrek
+                </div>
               </div>
-            </div>
+            </Link>
 
             <nav className="hidden md:flex space-x-8">
                <Link href="/" className="text-lg font-extrabold text-white transition-transform transform hover:scale-105 animate-fadeIn">
