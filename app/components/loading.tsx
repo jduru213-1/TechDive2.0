@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Loading() {
   return (
-    <main className="text-center bg-black h-screen  dark:bg-black flex flex-col justify-center items-center">
+    <main className="text-center bg-white h-screen  dark:bg-black flex flex-col justify-center items-center">
       {/* Welcome message */}
 
       {/* Three bouncing dots */}

@@ -96,6 +96,7 @@ export default function RootLayout({
             muted
             loop
             playsInline
+            controls={false}
             className="fixed top-0 left-0 w-full h-full object-cover z-[-5] pointer-events-none animate-fadeIn"
           />
           {/* Main Content */}

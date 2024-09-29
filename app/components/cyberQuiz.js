@@ -107,7 +107,7 @@ const Quiz = () => {
           <p style={{ color: 'white' }}>{result}</p>
           <button
             onClick={resetQuiz}
-            className="text-black rounded-full mt-5 px-6 py-2 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg">
+            className="text-black rounded-full mt-5 px-6 py-2 bg-white hover:animate-fadeIn cursor-pointer text-lg">
             Retake Quiz
           </button>
         </div>
@@ -115,27 +115,27 @@ const Quiz = () => {
         <div>
           <p style={{ color: 'white' }}>{`Question ${currentQuestionIndex + 1} of ${questions.length}`}</p>
           <p style={{ color: 'white' }}>{questions[currentQuestionIndex].question}</p>
-          <div style={{ marginTop: '10px' }}>
+          <div style={{ marginTop: '20px' }}>
             <button
               onClick={() => handleAnswer('yes')}
-              className="text-black rounded-full px-6 py-4 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg"
+              className="text-black rounded-full px-6 py-4 mr-3 bg-white cursor-pointer text-lg"
             >
               Yes
             </button>
             <button
               onClick={() => handleAnswer('neutral')}
-              className="text-black rounded-full px-6 py-4 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg"
+              className="text-black rounded-full px-6 py-4 mr-3 bg-white cursor-pointer text-lg"
             >
               Neutral
             </button>
             <button
               onClick={() => handleAnswer('no')}
-              className="text-black rounded-full px-6 py-4 bg-white hover:animate-fadeAndZoom cursor-pointer text-lg"
+              className="text-black rounded-full px-6 py-4 bg-white cursor-pointer text-lg"
             >
               No
             </button>
           </div>
-          <p style={{ color: 'white', marginTop: '10px' }}>Progress: {Math.round(progress)}%</p>
+          <p style={{ color: 'white', marginTop: '20px' }}>Progress: {Math.round(progress)}%</p>
         </div>
       )}
     </div>
