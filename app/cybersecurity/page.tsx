@@ -107,9 +107,10 @@ const Cybersecurity = () => {
   <p className="flex flex-col mt-2 text-lg text-gray-100 animate-fadeAndZoom text-center">Set up a controlled environment to test and experiment with SIEM tools and techniques safely and effectively</p>
 
   {/* Cards Section */}
-  <div className="flex justify-around items-center mt-10 flex-wrap">
+  <div className="flex justify-center items-center mt-10 flex-wrap">
+    
     {/* Project 1 */}
-    <div className="mx-4">
+    <div className="mx-4  max-w-xs">
       <div className="card bg-black w-80 h-[400px] shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
         <div className="card-body flex flex-col items-center justify-center text-center h-full">
           <FaWindows size={60} className="text-blue-100" />

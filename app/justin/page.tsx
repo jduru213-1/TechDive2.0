@@ -39,14 +39,14 @@ const Justin = () => {
       
       {/* Profile Section */}
       <div className="flex flex-col justify-center items-center h-screen -mt-4">
-        <div className="mt-16 w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
+        <div className="mt-20 w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl transform transition-all duration-500 ease-in-out animate-fadeAndZoom">
           <img src="/images/Justin.jpg" alt="Justin" className="w-full h-full" />
         </div>
         <h1 className="mt-1 text-6xl font-bold text-gray-100 animate-fadeAndZoom">Justin Duru</h1>
-        <h3 className="mt-2 text-xl font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
+        <h3 className="mt-2 text-xl text-center font-bold text-gray-100 transform scale-95 duration-700 ease-in-out animate-fadeAndZoom">
           SIEM Apprentice Instructor | Security Program Manager
         </h3>
-        <p className="mt-0 text-xl font-bold text-gray-100 animate-fadeAndZoom">
+        <p className="mt-0 text-xl text-center font-bold text-gray-100 animate-fadeAndZoom">
           "Every disappointment is a blessing in disguise"
         </p>
 

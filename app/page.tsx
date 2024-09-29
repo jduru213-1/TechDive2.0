@@ -57,7 +57,7 @@ return (
         <h1 className="mt-12 text-white text-6xl font-bold">The Motive</h1>
 
         {/* Profile Sections */}
-        <div className='flex justify-center space-x-4'>
+        <div className='flex justify-center space-x-2'>
           <Link href='/justin'>
             <div className="mt-5 relative flex flex-col items-center mx-4 group">
               <img
