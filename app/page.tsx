@@ -1,34 +1,10 @@
 "use client"; // Add this line at the top
 
 import React, { useEffect, useState } from 'react';
-import Loading from './components/loading';
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Page() {
-
-  // This component manages a loading state and simulates a loading delay before displaying the main content.//
-
-  const [isLoading, setIsLoading] = useState(true); // 
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  
-    return () => clearTimeout(timer); 
-  }, []); 
-  
-  useEffect(() => {
-    if (!isLoading) {
-      window.scrollTo(0, 0); 
-    } 
-  }, [isLoading]); 
-  
-  if (isLoading) {
-    return <Loading />; 
-  }
-  
 
   // Head section for page metadata and favicon
 return (
