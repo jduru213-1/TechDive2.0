@@ -43,21 +43,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </div>
 
-            {/* Navigation Links */}
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/" className="text-lg font-extrabold text-white">
-                Home
-              </Link>
-              <Link href="/#motive-section" className="text-lg font-extrabold text-white">
-                Story
-              </Link>
-              <Link href="/#resources-section" className="text-lg font-extrabold text-white">
-                Resources
-              </Link>
-              <Link href="/#about-section" className="text-lg font-extrabold text-white">
-                About
-              </Link>
-            </nav>
+            
+{/* Navigation Links */}
+<nav className="hidden md:flex space-x-8">
+  {['/', '/#motive-section', '/#resources-section', '/#about-section'].map((href, index) => {
+    const linkTexts = ["Home", "Story", "Resources", "About"];
+    return (
+      <Link 
+        key={index}
+        href={href} 
+        className="relative text-lg font-extrabold text-white transition duration-300 ease-in-out group"
+      >
+        <span className="relative z-10">{linkTexts[index]}</span>
+        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-300 transform scale-x-0 transition-transform duration-300 ease-in-out group-hover:scale-x-100" />
+      </Link>
+    );
+  })}
+</nav>
+
+
 
             <button onClick={toggleMenu} className="md:hidden text-white">
               {/* Hamburger Icon */}
@@ -70,38 +74,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
 
           {/* Mobile Menu */}
-          {isMenuOpen && (
-            <nav className="md:hidden bg-black p-4 mt-2 space-y-2">
-              <Link 
-                href="/" 
-                className="block text-lg font-extrabold text-white" 
-                onClick={closeMenu} // Close menu on link click
-              >
-                Home
-              </Link>
-              <Link 
-                href="/#motive-section" 
-                className="block text-lg font-extrabold text-white" 
-                onClick={closeMenu} // Close menu on link click
-              >
-                Story
-              </Link>
-              <Link 
-                href="/#resources-section" 
-                className="block text-lg font-extrabold text-white" 
-                onClick={closeMenu} // Close menu on link click
-              >
-                Resources
-              </Link>
-              <Link 
-                href="/#about-section" 
-                className="block text-lg font-extrabold text-white" 
-                onClick={closeMenu} // Close menu on link click
-              >
-                About
-              </Link>
-            </nav>
-          )}
+{isMenuOpen && (
+  <nav className="md:hidden bg-black p-6 mt-2 space-y-4 rounded-lg animate-slide-down">
+    <Link 
+      href="/" 
+      className="block text-lg font-extrabold text-white transition-transform duration-300 hover:text-gray-300 hover:translate-x-2"
+      onClick={closeMenu} // Close menu on link click
+    >
+      Home
+    </Link>
+    <Link 
+      href="/#motive-section" 
+      className="block text-lg font-extrabold text-white transition-transform duration-300 hover:text-gray-300 hover:translate-x-2"
+      onClick={closeMenu} // Close menu on link click
+    >
+      Story
+    </Link>
+    <Link 
+      href="/#resources-section" 
+      className="block text-lg font-extrabold text-white transition-transform duration-300 hover:text-gray-300 hover:translate-x-2"
+      onClick={closeMenu} // Close menu on link click
+    >
+      Resources
+    </Link>
+    <Link 
+      href="/#about-section" 
+      className="block text-lg font-extrabold text-white transition-transform duration-300 hover:text-gray-300 hover:translate-x-2"
+      onClick={closeMenu} // Close menu on link click
+    >
+      About
+    </Link>
+  </nav>
+)}
         </header>
 
         <main className="pt-20 relative h-screen">

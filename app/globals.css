@@ -10,12 +10,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 255;
+    --foreground-rgb: 255, 255, 255; /* Fixed for proper RGB format */
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
+/* Hamburger Menu Transformations */
 .open span:nth-child(1) {
   transform: rotate(45deg) translateY(6px);
 }
@@ -28,7 +29,7 @@
   transform: rotate(-45deg) translateY(-6px);
 }
 
-
+/* General Styles */
 html {
   scroll-behavior: smooth; /* Smooth scrolling for modern browsers */
   overscroll-behavior: contain; /* Prevents over-scrolling on supported touch devices */
@@ -37,7 +38,6 @@ html {
 body {
   scroll-behavior: smooth; /* Smooth scrolling for body content */
   overscroll-behavior: none; /* Disables overscroll effects */
-  
   scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
 }
 
@@ -45,34 +45,27 @@ section {
   scroll-snap-align: start; /* Snaps to the start of each section */
 }
 
-
-
-/* Fade In Up Animation */
+/* Animations */
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(50px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Pulse Animation for Icons */
 @keyframes pulseIcon {
-  0% {
+  0%, 100% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.2);
   }
-  100% {
-    transform: scale(1);
-  }
 }
 
-/* Fancy Animation */
 @keyframes fancyAnimation {
   0% {
     opacity: 0;
@@ -91,7 +84,6 @@ section {
   }
 }
 
-/* Sleek Float Animation */
 @keyframes sleekFloat {
   0% {
     transform: translateY(0) scale(1);
@@ -110,7 +102,6 @@ section {
   }
 }
 
-/* Popup Animation */
 @keyframes popup {
   0% {
     opacity: 0;
@@ -142,4 +133,21 @@ section {
 
 .popup {
   animation: popup 0.5s ease-in forwards;
+}
+
+/* Additional Utility Classes for Improved Animation Control */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
 }
