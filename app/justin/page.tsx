@@ -16,7 +16,7 @@ const Justin = () => {
     useEffect(() => {
       const timer = setTimeout(() => {
         setIsLoading(false);  // Stop loading after 2 seconds
-      }, 2000);
+      }, 5000);
   
       // Cleanup timer
       return () => clearTimeout(timer);

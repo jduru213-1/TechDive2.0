@@ -27,14 +27,12 @@ return (
           Unlock New Possibilities
         </h1>
         <p className="text-white px-6 sm:px-12 md:px-20 text-center leading-relaxed max-w-4xl">
-          A platform and resource designed by students, for students and tech
-          enthusiasts.
-          <br />
-          Stay informed with the latest tech news from various sources and dive
-          deeper
-          <br />
-          into tech concepts and projects that shape our world and its future.
-        </p>
+  A platform and resource designed by students, for students and tech enthusiasts. 
+  <br />
+  Stay informed with the latest tech news from various sources, and dive deeper into 
+  tech concepts and projects that shape our world and its future.
+</p>
+
       </div>
 
       {/* Buttons for Navigation */}
@@ -95,12 +93,11 @@ return (
       {/* Resources Section */}
       <section
         id="resources-section"
-        className="relative text-white font-bold text-center mt-1 py-40 animate-fancyAnimation transition-all duration-500"
+        className="relative text-white font-bold text-center py-20 animate-fancyAnimation transition-all duration-500"
       >
-        <h1 className="mt-1 text-5xl animate-fadeInDown delay-300">Resources</h1>
+        <h1 className="mt-20 text-5xl animate-fadeInDown delay-300">Resources</h1>
         <p className="text-lg font-normal max-w-2xl mx-auto mt-1 text-gray-100 animate-fadeInUp delay-600 px-4">
-          Explore a collection of tools and materials to enhance your skills in programming and cybersecurity.
-        </p>
+          Explore a collection of materials to enhance your skills in programming and cybersecurity.</p>
         <div className="mt-5 flex flex-wrap justify-center items-center gap-8 px-4">
           {/* Programming Card */}
           <div className="relative group w-80">
