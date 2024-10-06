@@ -27,24 +27,22 @@ return (
           Unlock New Possibilities
         </h1>
         <p className="text-white px-6 sm:px-12 md:px-20 text-center leading-relaxed max-w-4xl">
-  A platform and resource designed by students, for students and tech enthusiasts. 
-  <br />
-  Stay informed with the latest tech news from various sources, and dive deeper into 
-  tech concepts and projects that shape our world and its future.
-</p>
+            A platform designed by students, for students and tech enthusiasts, offering a wealth of resources and projects to help you explore the tech landscape. Navigate your path in technology with our interactive games and questionnaires that identify your interests and strengths.
+        </p>
+
 
       </div>
 
       {/* Buttons for Navigation */}
-      <div className="-mt-10 flex justify-center items-center animate-popup space-x-4">
+      <div className=" flex justify-center items-center animate-popup space-x-4">
         <Link href="#about-section">
-          <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
+          <button className="relative  px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
             About
           </button>
         </Link>
 
         <Link href="#motive-section">
-          <button className="relative top-20 px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
+          <button className="relative  px-5 py-5 rounded-full text-white uppercase tracking-widest transition-transform duration-500 ease-in-out transform hover:-translate-y-2 border border-white hover:bg-white hover:text-black shadow-lg hover:shadow-2xl">
             Story
           </button>
         </Link>
@@ -97,7 +95,8 @@ return (
       >
         <h1 className="mt-20 text-5xl animate-fadeInDown delay-300">Resources</h1>
         <p className="text-lg font-normal max-w-2xl mx-auto mt-1 text-gray-100 animate-fadeInUp delay-600 px-4">
-          Explore a collection of materials to enhance your skills in programming and cybersecurity.</p>
+        Explore resources to boost your skills in programming and cybersecurity
+          </p>
         <div className="mt-5 flex flex-wrap justify-center items-center gap-8 px-4">
           {/* Programming Card */}
           <div className="relative group w-80">
@@ -156,9 +155,7 @@ return (
         <h1 className="text-5xl font-extrabold text-center text-white mt-20">Purpose</h1>
         
         {/* Small paragraph added under the Purpose heading */}
-        <p className="text-lg font-semibold text-center text-gray-100 mt-2">
-          Discover our commitment to providing clear and practical resources for all who seek to learn about technology and cybersecurity.
-        </p>
+        <p className="text-lg font-normal text-center max-w-2xl mx-auto mt-1 text-gray-100 animate-fadeInUp delay-600 px-4">Learn more about our mission and what drives TechTrek</p>
         
         {/* Centering the card using Flexbox */}
         <div className="flex justify-center mt-5">
@@ -200,7 +197,7 @@ return (
 
       {/* Footer Section */}
       <footer className="flex justify-center items-center text-white py-4 text-sm">
-        <p>&copy; 2024 TrekInTech</p>
+        <p>&copy; 2024 TechTreck</p>
       </footer>
       </>
   )

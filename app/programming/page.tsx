@@ -10,7 +10,7 @@ export default function Programming() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);  // Stop loading after 2 seconds
-    }, 2000);
+    }, 5000);
 
     // Cleanup timer
     return () => clearTimeout(timer);
@@ -31,8 +31,9 @@ export default function Programming() {
   // Return the programming content when loading is finished
   return (
     <div>
-      <h1>Programming</h1>
-      <p className='mt-10 mb-10 font-bold text-center text-white'>TECHDIVE @ LLC</p>
+     <footer className="flex justify-center items-center text-white py-4 text-sm">
+        <p>&copy; 2024 TechTreck</p>
+      </footer>
     </div>
   );
 }
