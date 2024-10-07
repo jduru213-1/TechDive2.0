@@ -495,26 +495,57 @@ const Justin = () => {
 
   </li>
 </ul>
+{/* Social Links */}
+<div className="flex justify-center items-center">
+  <div className="flex space-x-4 mt-4">
+    <div className="relative group">
+      <a href="https://www.linkedin.com/in/justin-duru-97159a250/" target="_blank" rel="noopener noreferrer">
+        <AiFillLinkedin size={20} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
+      </a>
+      <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
+        LinkedIn
+      </span>
+    </div>
 
-<div className="flex items-center justify-center space-x-4 mt-6 mb-8">
-  <p className="text-gray-100">&copy; 2024 Justin Duru</p>
-  <a href="https://www.linkedin.com/in/justin-duru-97159a250/" target="_blank" rel="noopener noreferrer" className="group">
-    <AiFillLinkedin size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
-  </a>
-  <a href="mailto:jduru213@gmail.com" target="_blank" rel="noopener noreferrer" className="group">
-    <AiFillMail size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
-  </a>
-  <a href="https://docs.google.com/document/d/1iUwZ2TQr1kTolBI_w0LW6pcB979RCPIdV0oST8uvP_Y/edit" target="_blank" rel="noopener noreferrer" className="group">
-    <AiFillFileText size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
-  </a>
-  <a href="https://medium.com/@jduru213" target="_blank" rel="noopener noreferrer" className="group">
-    <AiFillMediumSquare size={40} className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300" />
-  </a>
-  <a href="https://github.com/jduru213-1" target="_blank" rel="noopener noreferrer">
-     <FaGithub size={40}className="text-blue-100 group-hover:bg-blue-800 group-hover:text-white p-2 rounded-lg transition-colors duration-300"></FaGithub>
-  </a>
+    <div className="relative group">
+      <a href="mailto:jduru213@gmail.com" target="_blank" rel="noopener noreferrer">
+        <AiFillMail size={20} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
+      </a>
+      <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
+        Email
+      </span>
+    </div>
+
+    <div className="relative group">
+      <a href="https://docs.google.com/document/d/1iUwZ2TQr1kTolBI_w0LW6pcB979RCPIdV0oST8uvP_Y/edit" target="_blank" rel="noopener noreferrer">
+        <AiFillFileText size={20} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
+      </a>
+      <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
+        Resume
+      </span>
+    </div>
+
+    <div className="relative group">
+      <a href="https://medium.com/@jduru213" target="_blank" rel="noopener noreferrer">
+        <AiFillMediumSquare size={20} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
+      </a>
+      <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
+        Medium
+      </span>
+    </div>
+
+    <div className="relative group">
+      <a href="https://github.com/jduru213-1" target="_blank" rel="noopener noreferrer">
+        <FaGithub size={20} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
+      </a>
+      <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
+        GitHub
+      </span>
+    </div>
+  </div>
 </div>
-<footer className="flex justify-center items-center text-white py-4 text-sm">
+
+<footer className="flex justify-center items-center mt-10 text-white py-4 text-sm">
         <p>&copy; 2024 TechTrek</p>
       </footer>
 </div>
