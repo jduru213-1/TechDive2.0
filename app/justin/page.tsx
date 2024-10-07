@@ -64,7 +64,7 @@ const Justin = () => {
               <h3 className="mt-2 text-lg sm:text-xl md:text-2xl animate-pulse-fade-scale text-center text-gray-100">
                   SIEM Apprentice Instructor | Security Program Manager
               </h3>
-              <p className="mt-0 text-lg sm:text-xl animate-pulse-fade-scale text-center text-gray-100">
+              <p className="mt-2 text-lg sm:text-xl animate-pulse-fade-scale text-center text-gray-100">
                   "Every disappointment is a blessing in disguise"
               </p>
 
@@ -199,28 +199,27 @@ const Justin = () => {
 
   
 {/* Projects Section */}
-<h1 className=" text-5xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1> {/* Changed mt-6 to mt-2 */}
-<p className="mt-0 text-gray-100 animate-fadeAndZoom text-center"> {/* Changed mt-1 to mt-0 */}
+<h1 className="text-5xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">Projects</h1>
+<p className="mt-0 text-gray-100 animate-fadeAndZoom text-center">
   A display of my most recent works, projects, and developments.
 </p>
 
 <div className="flex flex-col justify-center items-center min-h-screen">
   {/* Carousel with Swipe Buttons */}
-  
-  <div className="mt-[-250px] relative w-full max-w-4xl flex justify-center "> {/* Adjusted margin-top */}
+  <div className="mt-[-250px] relative w-full max-w-4xl flex justify-center">
     {/* Carousel Container */}
     <div className="carousel carousel-horizontal rounded-box h-96 overflow-hidden w-full">
-      {/* Carousel items go here */}
+      {/* Carousel items */}
 
       {/* Project 1 */}
       <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg"> {/* Responsive max-w classes */}
+        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
           <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <div className="card-body flex flex-col items-center justify-center text-center h-full">
               <FaWindows size={80} className="text-blue-100" />
               <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
               <p className="text-gray-100">
-              Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
+                Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
               </p>
               <div className="card-actions animate-fadeIn mt-4">
                 <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
@@ -236,13 +235,14 @@ const Justin = () => {
 
       {/* Project 2 */}
       <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg"> {/* Responsive max-w classes */}
+        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
           <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <div className="card-body flex flex-col items-center justify-center text-center h-full">
               <SiAwssecretsmanager size={80} className="text-blue-100" />
               <h1 className="card-title text-white">Vulnerability Management</h1>
-              <p className=" text-gray-100 animate-fadeAndZoom">
-              Conducted a vulnerability assessment with Metasploit to identify security weaknesses in target systems. Utilizing the NIST Cybersecurity Framework ensured adherence to industry standards, resulting in a report outlining vulnerabilities and risk levels.</p>
+              <p className="text-gray-100 animate-fadeAndZoom">
+                Conducted a vulnerability assessment with Metasploit to identify security weaknesses in target systems. Utilizing the NIST Cybersecurity Framework ensured adherence to industry standards, resulting in a report outlining vulnerabilities and risk levels.
+              </p>
               <div className="card-actions mt-4">
                 <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
                   <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
@@ -255,40 +255,38 @@ const Justin = () => {
         </div>
       </div>
 
-    {/* Project 3 */}
-<div className="carousel-item h-full w-full flex justify-center">
-  <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg"> {/* Responsive max-w classes */}
-    <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-      <div className="card-body flex flex-col items-center justify-center text-center h-full">
-        <TbSettingsAutomation size={80} className="text-blue-100" />
-        <h1 className="card-title text-white">Automated Threat Detection</h1>
-        
-        <p className="text-gray-100 animate-fadeAndZoom">
-  Established an automated security environment by creating Splunk alerts sent to my SOAR platform via Tines. Deployed Mimicatz on user machines and used VirusTotal for swift hash investigation.
-</p>
-
-        <div className="card-actions mt-4">
-          <Link href="https://your-link-here">
-            <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-              Explore
-            </button>
-          </Link>
+      {/* Project 3 */}
+      <div className="carousel-item h-full w-full flex justify-center">
+        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
+          <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+            <div className="card-body flex flex-col items-center justify-center text-center h-full">
+              <TbSettingsAutomation size={80} className="text-blue-100" />
+              <h1 className="card-title text-white">Automated Threat Detection</h1>
+              <p className="text-gray-100 animate-fadeAndZoom">
+                Established an automated security environment by creating Splunk alerts sent to my SOAR platform via Tines. Deployed Mimicatz on user machines and used VirusTotal for swift hash investigation.
+              </p>
+              <div className="card-actions mt-4">
+                <Link href="https://your-link-here">
+                  <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+                    Explore
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
       {/* Project 4 */}
       <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg"> {/* Responsive max-w classes */}
+        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
           <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
             <div className="card-body flex flex-col items-center justify-center text-center h-full">
               <SiCyberdefenders size={80} className="text-blue-100" />
               <h1 className="card-title text-white">Cybersecurity Page</h1>
-              <p className=" text-gray-100 animate-fadeAndZoom">
-          Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.
-        </p>
+              <p className="text-gray-100 animate-fadeAndZoom">
+                Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.
+              </p>
               <div className="card-actions mt-4">
                 <Link href="/cybersecurity">
                   <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
@@ -302,43 +300,42 @@ const Justin = () => {
       </div>
     </div>
 
-   {/* Swipe Buttons */}
-<button
-  className="absolute left-[1rem] md:left-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
-  onClick={() => {
-    const carousel = document.querySelector('.carousel');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
+    {/* Swipe Buttons */}
+    <button
+      className="absolute left-[1rem] md:left-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
+      onClick={() => {
+        const carousel = document.querySelector('.carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
 
-    if (carousel && carouselItem) {
-      carousel.scrollBy({
-        left: -carouselItem.clientWidth,
-        behavior: 'smooth',
-      });
-    }
-  }}
->
-  <span className="transform transition-transform duration-200 hover:translate-x-1">◀</span>
-</button>
+        if (carousel && carouselItem) {
+          carousel.scrollBy({
+            left: -carouselItem.clientWidth,
+            behavior: 'smooth',
+          });
+        }
+      }}
+    >
+      <span className="transform transition-transform duration-200 hover:translate-x-1">◀</span>
+    </button>
 
-<button
-  className="absolute right-[1rem] md:right-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:-rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
-  onClick={() => {
-    const carousel = document.querySelector('.carousel');
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
+    <button
+      className="absolute right-[1rem] md:right-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:-rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
+      onClick={() => {
+        const carousel = document.querySelector('.carousel');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
 
-    if (carousel && carouselItem) {
-      carousel.scrollBy({
-        left: carouselItem.clientWidth,
-        behavior: 'smooth',
-      });
-    }
-  }}
->
-  <span className="transform transition-transform duration-200 hover:-translate-x-1">▶</span>
-</button>
-
+        if (carousel && carouselItem) {
+          carousel.scrollBy({
+            left: carouselItem.clientWidth,
+            behavior: 'smooth',
+          });
+        }
+      }}
+    >
+      <span className="transform transition-transform duration-200 hover:-translate-x-1">▶</span>
+    </button>
   </div>
 </div>
 
