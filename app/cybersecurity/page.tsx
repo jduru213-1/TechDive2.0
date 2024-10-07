@@ -232,7 +232,7 @@ const Cybersecurity = () => {
   />
 
   <h1 className="text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
-    CYBERSECURITY ESCAPE ROOM
+    CYBERSECURITY BEST PRACTICES
   </h1>  
 
   <p className="text-lg text-gray-100 animate-fadeAndZoom text-center mb-0">
@@ -240,7 +240,7 @@ const Cybersecurity = () => {
 </p>
 
 
-  <a href="https://cyberescaperoom-qsybvrmpf2fdjrlujfpfik.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
+  <a href="https://jduru213-1-cyberquiz-cyber-scenarios-quiz-ru3fps.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
     <div className="card bg-black w-full h-full mt-20 shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105">
       <figure className="w-full h-full">
         <img

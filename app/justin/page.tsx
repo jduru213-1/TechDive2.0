@@ -7,6 +7,7 @@ import { SiJira, SiSplunk, SiAwssecretsmanager } from "react-icons/si";
 import { TbSettingsAutomation } from "react-icons/tb";
 import { SiCyberdefenders } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { SiMetasploit } from "react-icons/si";
 import { FaGitSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
@@ -192,6 +193,18 @@ const Justin = () => {
       aria-label="Kali Linux"
     >
       <SiKalilinux size={40} className="text-blue-100 hover:text-black" />
+    </a>
+    <a 
+      className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
+      aria-label="Kali Linux"
+    >
+      <SiSplunk size={40} className="text-blue-100 hover:text-black" />
+    </a>
+    <a 
+      className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
+      aria-label="Snort"
+    >
+      <SiMetasploit size={40} className="text-blue-100 hover:text-black" />
     </a>
   </div>
 </div>
