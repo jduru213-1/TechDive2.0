@@ -225,11 +225,13 @@ const Cybersecurity = () => {
   </div>
 </div>
 
+{/*
     <div className="flex flex-col justify-center items-center h-screen mt-[-100px] mb-40">
   <SiNintendogamecube
     size={100}
     className="text-blue-100 mb-4 hover:text-red-600 animate-pulse transition-colors duration-300"
   />
+  
 
   <h1 className="text-4xl font-extrabold text-gray-100 animate-fadeAndZoom text-center">
     CYBERSECURITY BEST PRACTICES
@@ -240,24 +242,25 @@ const Cybersecurity = () => {
 </p>
 
 
-  <a href="https://jduru213-1-cyberquiz-cyber-scenarios-quiz-cvl21d.streamlit.app/" className="w-80 h-80"> {/* Increased size */}
-    <div className="card bg-black w-full h-full mt-20 shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105">
-      <figure className="w-full h-full">
-        <img
-          src="/images/cyberGame.jpg"
-          className="rounded-xl w-full h-full"
-        />
-      </figure>
-      <div className="card-body items-center text-center">
-        <p className='font-extrabold text-white'>Play Now</p>
-      </div>
+
+<a href="https://jduru213-1-cyberquiz-cyber-scenarios-quiz-cvl2.streamlit.app/" className="w-80 h-80"> 
+  <div className="card bg-black w-full h-full mt-20 shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105">
+    <figure className="w-full h-full">
+      <img
+        src="/images/cyberGame.jpg"
+        className="rounded-xl w-full h-full"
+      />
+    </figure>
+    <div className="card-body items-center text-center">
+      <p className='font-extrabold text-white'>Play Now</p>
     </div>
-  </a>
-</div>
+  </div>
+</a>
+*/}
 
 
 
-    <div className="flex flex-col items-center justify-center h-full mt-40">
+    <div className="flex flex-col items-center justify-center h-full mt-20">
       {/* Icon */}
         <FaRoad size={100} className="text-blue-100 hover:text-yellow-400 transition-colors duration-30" />
           {/* Heading */} 
