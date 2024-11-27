@@ -259,7 +259,6 @@ const Cybersecurity = () => {
 */}
 
 
-
     <div className="flex flex-col items-center justify-center h-full mt-20">
       {/* Icon */}
         <FaRoad size={100} className="text-blue-100 hover:text-yellow-400 transition-colors duration-30" />
