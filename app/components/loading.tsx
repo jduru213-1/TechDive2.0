@@ -152,7 +152,7 @@ const LoadingScreen = () => {
             <div className="flex justify-center">
               <div className="relative w-64 h-4 bg-gray-200 rounded-full overflow-hidden">
                 <div
-                  className="absolute left-0 top-0 h-full bg-blue-900 transition-all ease-in-out duration-300"
+                  className="absolute left-0 top-0 h-full bg-yellow-300 transition-all ease-in-out duration-300"
                   style={{ width: `${loadingProgress}%` }}
                 />
               </div>
