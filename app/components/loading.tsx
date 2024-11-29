@@ -137,31 +137,11 @@ const LoadingScreen = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-black to-gray-900 text-white">
-      <div className="text-center">
-        {showNextPage ? (
-          <div className="transition-all ease-in-out text-2xl font-bold">
-            <p>Welcome to the Next Page!</p>
-          </div>
-        ) : (
-          <>
-            {/* Dynamic Quote Section */}
-            <p className="mb-6 text-xl font-semibold">{quote}</p>
-
-            {/* Progress Bar - Centered */}
-            <div className="flex justify-center">
-              <div className="relative w-64 h-4 bg-gray-200 rounded-full overflow-hidden">
-                <div
-                  className="absolute left-0 top-0 h-full bg-yellow-300 transition-all ease-in-out duration-300"
-                  style={{ width: `${loadingProgress}%` }}
-                />
-              </div>
-            </div>
-            <p className="mt-2 text-sm">Loading {loadingProgress}%</p>
-          </>
-        )}
-      </div>
-    </div>
+    <div className='flex space-x-2 justify-center items-center bg-white h-screen dark:invert'>
+     <div className='h-12 w-12 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+   <div className='h-12 w-12 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+   <div className='h-12 w-12 bg-black rounded-full animate-bounce'></div>
+ </div>
   );
 };
 

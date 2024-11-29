@@ -134,12 +134,7 @@ const Justin = () => {
 <div className="flex flex-wrap justify-center mt-10">
   {/* Skill Icons */}
   <div className="mb-40 flex flex-wrap justify-center mt-10">
-    <a 
-      className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
-      aria-label="JavaScript"
-    >
-      <SiJavascript size={40} className="text-blue-100 hover:text-black" />
-    </a>
+    
     <a 
       className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
       aria-label="Git"
@@ -182,12 +177,7 @@ const Justin = () => {
     >
       <FaAws size={40} className="text-blue-100 hover:text-black" />
     </a>
-    <a 
-      className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
-      aria-label="Streamlit"
-    >
-      <SiStreamlit size={40} className="text-blue-100 hover:text-black" />
-    </a>
+    
     <a 
       className="mx-4 mb-4 p-2 border-2 border-gray-300 rounded-lg hover:border-black hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out" 
       aria-label="Python"
@@ -247,142 +237,63 @@ const Justin = () => {
   A display of my most recent works, projects, and developments.
 </p>
 
-<div className="flex flex-col justify-center items-center min-h-screen">
-  {/* Carousel with Swipe Buttons */}
-  <div className="mt-[-250px] relative w-full max-w-4xl flex justify-center">
-    {/* Carousel Container */}
-    <div className="carousel carousel-horizontal rounded-box h-96 overflow-hidden w-full">
-      {/* Carousel items */}
-
-      {/* Project 1 */}
-      <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
-          <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <div className="card-body flex flex-col items-center justify-center text-center h-full">
-              <FaWindows size={80} className="text-blue-100" />
-              <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
-              <p className="text-gray-100">
-                Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
-              </p>
-              <div className="card-actions animate-fadeIn mt-4">
-                <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
-                  <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                    Explore
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Project 2 */}
-      <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
-          <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <div className="card-body flex flex-col items-center justify-center text-center h-full">
-              <SiAwssecretsmanager size={80} className="text-blue-100" />
-              <h1 className="card-title text-white">Vulnerability Management</h1>
-              <p className="text-gray-100 animate-fadeAndZoom">
-                Conducted a vulnerability assessment with Metasploit to identify security weaknesses in target systems. Utilizing the NIST Cybersecurity Framework ensured adherence to industry standards, resulting in a report outlining vulnerabilities and risk levels.
-              </p>
-              <div className="card-actions mt-4">
-                <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
-                  <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                    Explore
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Project 3 */}
-      <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
-          <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <div className="card-body flex flex-col items-center justify-center text-center h-full">
-              <TbSettingsAutomation size={80} className="text-blue-100" />
-              <h1 className="card-title text-white">Automated Threat Detection</h1>
-              <p className="text-gray-100 animate-fadeAndZoom">
-                Established an automated security environment by creating Splunk alerts sent to my SOAR platform via Tines. Deployed Mimicatz on user machines and used VirusTotal for swift hash investigation.
-              </p>
-              <div className="card-actions mt-4">
-                <Link href="https://your-link-here">
-                  <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                    Explore
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Project 4 */}
-      <div className="carousel-item h-full w-full flex justify-center">
-        <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg">
-          <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
-            <div className="card-body flex flex-col items-center justify-center text-center h-full">
-              <SiCyberdefenders size={80} className="text-blue-100" />
-              <h1 className="card-title text-white">Cybersecurity Page</h1>
-              <p className="text-gray-100 animate-fadeAndZoom">
-                Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.
-              </p>
-              <div className="card-actions mt-4">
-                <Link href="/cybersecurity">
-                  <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-                    Explore
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+<div className="flex flex-wrap justify-center items-center min-h-screen gap-6 px-4">
+  {/* Project 1 */}
+  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
+    <div className="card-body flex flex-col items-center justify-center text-center">
+      <FaWindows size={80} className="text-blue-100" />
+      <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
+      <p className="text-gray-100">
+        Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
+      </p>
+      <div className="card-actions mt-4">
+        <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
+          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+            Explore
+          </button>
+        </Link>
       </div>
     </div>
-
-    {/* Swipe Buttons */}
-    <button
-      className="absolute left-[1rem] md:left-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
-      onClick={() => {
-        const carousel = document.querySelector('.carousel');
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
-
-        if (carousel && carouselItem) {
-          carousel.scrollBy({
-            left: -carouselItem.clientWidth,
-            behavior: 'smooth',
-          });
-        }
-      }}
-    >
-      <span className="transform transition-transform duration-200 hover:translate-x-1">◀</span>
-    </button>
-
-    <button
-      className="absolute right-[1rem] md:right-[2rem] top-1/2 transform -translate-y-1/2 bg-white text-black px-6 py-4 rounded-full shadow-lg hover:bg-gray-400 transition-all duration-300 hover:scale-110 hover:-rotate-12 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 active:scale-95 active:shadow-none"
-      onClick={() => {
-        const carousel = document.querySelector('.carousel');
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        const carouselItem = carouselItems.length > 0 ? carouselItems[0] : null;
-
-        if (carousel && carouselItem) {
-          carousel.scrollBy({
-            left: carouselItem.clientWidth,
-            behavior: 'smooth',
-          });
-        }
-      }}
-    >
-      <span className="transform transition-transform duration-200 hover:-translate-x-1">▶</span>
-    </button>
   </div>
-</div>
 
-  <h1 className="mb-2 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
+  {/* Project 2 */}
+  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
+    <div className="card-body flex flex-col items-center justify-center text-center">
+      <SiAwssecretsmanager size={80} className="text-blue-100" />
+      <h1 className="card-title text-white">Vulnerability Management</h1>
+      <p className="text-gray-100">
+        Conducted a vulnerability assessment with Metasploit to identify security weaknesses in target systems. Utilizing the NIST Cybersecurity Framework ensured adherence to industry standards, resulting in a report outlining vulnerabilities and risk levels.
+      </p>
+      <div className="card-actions mt-4">
+        <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
+          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+            Explore
+          </button>
+        </Link>
+      </div>
+    </div>
+  </div>
+
+  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
+    <div className="card-body flex flex-col items-center justify-center text-center">
+    <SiCyberdefenders size={80} className="text-blue-100" />
+    <h1 className="card-title text-white">Cybersecurity Page</h1>
+    <p className="text-gray-100">
+    Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.      </p>
+      <div className="card-actions mt-4">
+        <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
+          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
+            Explore
+          </button>
+        </Link>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+  <h1 className="mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
 
 <ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical flex-auto">
