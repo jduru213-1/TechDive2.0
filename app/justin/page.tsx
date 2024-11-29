@@ -237,61 +237,73 @@ const Justin = () => {
   A display of my most recent works, projects, and developments.
 </p>
 
-<div className="flex flex-wrap justify-center items-center min-h-screen gap-6 px-4">
-  {/* Project 1 */}
-  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
-    <div className="card-body flex flex-col items-center justify-center text-center">
-      <FaWindows size={80} className="text-blue-100" />
-      <h1 className="card-title text-white">Active Directory Detection & Monitoring</h1>
-      <p className="text-gray-100">
-        Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
-      </p>
-      <div className="card-actions mt-4">
-        <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
-          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-            Explore
-          </button>
-        </Link>
+<div className="flex flex-col justify-center items-center min-h-screen">
+  {/* Cards Container */}
+  <div className="flex flex-wrap justify-center gap-4 w-full max-w-7xl">
+    {/* Project 1 */}
+    <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl w-full">
+      <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <div className="card-body flex flex-col items-center justify-center text-center h-full">
+          <FaWindows size={80} className="text-blue-100" />
+          <h1 className="card-title text-white text-lg sm:text-xl md:text-2xl">Active Directory Detection & Monitoring</h1>
+          <p className="text-gray-100 text-sm sm:text-base md:text-lg">
+          Conducted a brute force attack simulation on a Windows machine to assess vulnerability and resilience. Utilized Splunk for in-depth analysis of generated threats, including failed login attempts and unusual access patterns.
+          </p>
+          <div className="card-actions mt-4">
+            <Link href="https://medium.com/@jduru213/cybersecurity-homelab-building-an-on-premise-domain-environment-with-splunk-windows-and-active-840ba325f3ee">
+              <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300" aria-label="Explore Active Directory Detection & Monitoring">
+                Explore
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  {/* Project 2 */}
-  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
-    <div className="card-body flex flex-col items-center justify-center text-center">
-      <SiAwssecretsmanager size={80} className="text-blue-100" />
-      <h1 className="card-title text-white">Vulnerability Management</h1>
-      <p className="text-gray-100">
-        Conducted a vulnerability assessment with Metasploit to identify security weaknesses in target systems. Utilizing the NIST Cybersecurity Framework ensured adherence to industry standards, resulting in a report outlining vulnerabilities and risk levels.
-      </p>
-      <div className="card-actions mt-4">
-        <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
-          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-            Explore
-          </button>
-        </Link>
+    {/* Project 2 */}
+    <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl w-full">
+      <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <div className="card-body flex flex-col items-center justify-center text-center h-full">
+          <SiAwssecretsmanager size={80} className="text-blue-100" />
+          <h1 className="card-title text-white text-lg sm:text-xl md:text-2xl">Vulnerability Management</h1>
+          <p className="text-gray-100 text-sm sm:text-base md:text-lg">
+            Engage in a Metasploit vulnerability assessment to pinpoint security weaknesses in systems, following the NIST Cybersecurity Framework for compliance and generating a detailed report on identified vulnerabilities and associated risks.
+          </p>
+          <div className="card-actions mt-4">
+            <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
+              <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300" aria-label="Explore Vulnerability Management">
+                Explore
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      </div>
+      </div>
 
-  <div className="card bg-black shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(25%-1rem)]">
-    <div className="card-body flex flex-col items-center justify-center text-center">
-    <SiCyberdefenders size={80} className="text-blue-100" />
-    <h1 className="card-title text-white">Cybersecurity Page</h1>
-    <p className="text-gray-100">
-    Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.      </p>
-      <div className="card-actions mt-4">
-        <Link href="/cybersecurity">
-          <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
-            Explore
-          </button>
-        </Link>
+      <div className="m-4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl w-full">
+      <div className="card bg-black h-full shadow-xl border-2 border-transparent hover:border-white hover:shadow-2xl hover:scale-105 transform transition-all duration-300">
+        <div className="card-body flex flex-col items-center justify-center text-center h-full">
+        <SiCyberdefenders size={80} className="text-blue-100" />
+        <h1 className="card-title text-white">Cybersecurity Page</h1>
+          <p className="text-gray-100 text-sm sm:text-base md:text-lg">
+          Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.
+          </p>
+          <div className="card-actions mt-4">
+            <Link href="/cybersecurity">
+              <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300" aria-label="Explore Vulnerability Management">
+                Explore
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      </div>
+      
+
 
 </div>
-  <h1 className="mt-10 mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
+  <h1 className="mt-20 mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
 
 <ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical flex-auto">
