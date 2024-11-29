@@ -10,7 +10,7 @@ export default function Programming() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);  // Stop loading after 2 seconds
-    }, 5000);
+    }, 2000);
 
     // Cleanup timer
     return () => clearTimeout(timer);

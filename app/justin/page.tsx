@@ -36,7 +36,7 @@ const Justin = () => {
   useEffect(() => {
       const timer = setTimeout(() => {
           setIsLoading(false);  // Stop loading after 5 seconds
-      }, 5000);
+      }, 2000);
 
       // Cleanup timer
       return () => clearTimeout(timer);
@@ -281,7 +281,7 @@ const Justin = () => {
     <p className="text-gray-100">
     Created a page to guide students in cybersecurity through a questionnaire, fundamental cyber tips, project displays in incident response and threat detection, and an escape room for practical scenario testing.      </p>
       <div className="card-actions mt-4">
-        <Link href="https://medium.com/@jduru213/vulnerability-management-lab-using-nessus-nist-framework-012bda6dbfd3">
+        <Link href="/cybersecurity">
           <button className="btn bg-white text-black hover:bg-black hover:text-white hover:scale-105 transform transition-transform duration-300">
             Explore
           </button>
@@ -289,8 +289,6 @@ const Justin = () => {
       </div>
     </div>
   </div>
-
-
 
 </div>
   <h1 className="mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>

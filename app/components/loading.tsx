@@ -127,7 +127,7 @@ const LoadingScreen = () => {
     // Transition to next page after loading completes
     const nextPageTimer = setTimeout(() => {
       setShowNextPage(true);
-    }, 5000); // 10 seconds delay to show next page
+    }, 2000); // 10 seconds delay to show next page
 
     // Cleanup intervals and timers when component unmounts
     return () => {
