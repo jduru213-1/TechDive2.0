@@ -291,7 +291,7 @@ const Justin = () => {
   </div>
 
 </div>
-  <h1 className="mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
+  <h1 className="mt-10 mb-5 text-5xl font-extrabold text-gray-100 text-center">Education & Experience</h1>
 <p className="text-gray-100 text-center">A display of my most recent works, projects, and developments.</p>
 
 <ul className="mt-16 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical flex-auto">
