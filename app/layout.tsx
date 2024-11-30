@@ -112,15 +112,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   {/* Ensure main takes full height */}
   {/* Background Video */}
   <video
-    src="/background.mp4"
-    autoPlay
-    preload="auto"
-    muted
-    loop
-    playsInline
-    controls={false}
-    className="fixed top-0 left-0 w-full h-full object-cover z-[-5] pointer-events-none"
-  />
+  src="/background.mp4"
+  autoPlay
+  preload="auto"
+  muted
+  loop
+  playsInline
+  controls={false}
+  disablePictureInPicture // Prevents Picture-in-Picture mode
+  className="fixed top-0 left-0 w-full h-full object-cover z-[-5] pointer-events-none"
+/>
 
   {/* Main Content */}
   <div className="relative z-10">
