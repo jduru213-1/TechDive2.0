@@ -90,7 +90,7 @@ const Justin = () => {
     </div>
 
     <div className="relative group">
-        <a href="https://docs.google.com/document/d/1iUwZ2TQr1kTolBI_w0LW6pcB979RCPIdV0oST8uvP_Y/edit" target="_blank" rel="noopener noreferrer">
+        <a href="https://dochub.com/m/shared-document/justin-duru/nO1YzvAwA1Mjn12w6L4WP2/justin-du" target="_blank" rel="noopener noreferrer">
             <AiFillFileText size={30} className="text-blue-100 hover:text-blue-800 transition-colors duration-300" />
         </a>
         <span className="absolute top-10 left-1/2 transform -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-black text-sm px-2 py-1 rounded shadow-lg">
